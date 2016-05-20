@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Infinity Online Store</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+      <body>
+        <header>
+        <div class="header">
+          <img src="img/logo01.png" alt="logo" />
+        </div>
+
+       </header>
+
+       <br><br><br><br><br><br>
+          <nav>  
+            <ul class="nav_hbar">
+              <li><strong><a href="index.html">Home</a></strong></li>
+              <li><strong><a href="products.html">Products</a></strong></li>
+              <li><strong><a href="contacts.html">Contact</a></strong></li>
+            </ul>
+          </nav>
+            <h1>Registration</h1>
+            
+        <fieldset>
+          <legend><span class="number"></span>Info</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+          
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email">
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="user_password">
+          <br>
+          <label>Gender</label>
+          <input type="radio" id="Female" value="Female" name="user_gender"><label for="Female" class="light">Female</label>
+          <input type="radio" id="Male" value="Male" name="user_gender"><label for="Male" class="light">Male</label>
+        </fieldset>
+        <fieldset>
+        <label for="country">Country</label>
+        <select id="country" name="user_country">
+          <optgroup label="Country">
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="England">England</option>
+            <option value="Germany">Germany</option>
+            <option value="Greece"> Greece</option>
+            <option value="India">India</option>
+            <option value="Italy"> Italy</option>
+            <option value="Romania">Romania</option>
+            <option value="India">India</option>
+            <option value="Russia"> Russia</option>
+            <option value="United States">United States</option>
+            </optgroup>
+            </select>
+            </fieldset>
+         <input id="register_button" type="submit" value="Register" onclick="alert('Thank you!')"/>
+         <div class="content" align="center">
+      <footer>
+      <hr>
+        <p>Copyright ©
+         <span itemprop="copyrightYear">2016</span>
+         <span itemprop="copyrightHolder">Infinity Online Store</span>
+        </p>
+        <p><a href="index.html">Home</a> -
+           <a href="products.html">Products</a> -
+           <a href="contacts.html">Contact Us</a></p>
+       </footer>
+      </div>
+    </body>
+</html>

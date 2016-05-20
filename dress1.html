@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+		<title>Infinity Online Store</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+		<div class="header">
+		  <img src="img/logo01.png" alt="logo" />
+		</div>
+		<!-- Login form-->
+		<div align="right">
+		<nav>
+		<div class="loginform cf">
+		<form name="login" action="index_submit" method="get">
+			<label for="usermail">Email</label>
+			        <input type="email" name="usermail" placeholder="yourname@email.com" required>
+			<label for="password">Password</label>
+			        <input type="password" name="password" placeholder="password" required>
+			        <input type="submit" value="Login">
+		</form>
+		</div>
+				<a href="Register.html">Register</a> |
+				<a href="index.html">Logout</a> 
+		</nav>
+		<div align="center">
+				<h1 style="color:blue;">Infinity Online Store</h1>
+		</div>
+		</header>
+		<!-- Horizontal Navigation bar -->
+		<nav>	
+			<ul class="nav_hbar">
+			  <li><strong><a href="index.html">Home</a></strong></li>
+			  <li><strong><a href="products.html">Products</a></strong></li>
+			  <li><strong><a href="contacts.html">Contact</a></strong></li>
+			</ul>
+		</nav>
+			<div align="left">
+			<h1>Information</h1>
+			<ul>
+				<li>Price: 130$</li><br>
+				<li>Model: Dress 001</li><br>
+				<li>Cotton blend dress.
+				Round neck with fastening detail.
+				Stretch insert at the waist.
+				Classic fit.</li>
+			</ul>
+			</div>
+			<br><br><br>
+			<hr>
+			<img src ="img/img1.jpg" alt = "Image1" style="width:400px; height:400px;">
+			<hr>
+			<table>
+				<table border="1">
+					  <tr>
+					    <th>OUR SIZE</th>
+					    <th>UK</th>
+					    <th>ES</th>
+					  </tr>
+					  <tr>
+					    <td>36 (XS)</td>
+					    <td>6</td>
+					    <td>34</td>
+					  </tr>
+					  <tr>
+					    <td>38 (S)</td>
+					    <td>8</td>
+					    <td>36</td>
+					  </tr>
+					  <tr>
+					    <td>40 (M)</td>
+					    <td>10</td>
+					    <td>38</td>
+					  </tr>
+					  <tr>
+					    <td>42 (L)</td>
+					    <td>12</td>
+					    <td>40</td>
+					  </tr>
+				</table>
+				<br><br>
+	<form action="action_page">
+	  <select name="size">
+	    <option value="size">Size</option>
+	    <option value="size">XS</option>
+	    <option value="size">S</option>
+	    <option value="size">M</option>
+	    <option value="size">L</option>
+	  </select>
+	  <form action="action_page">
+	  <select name="Qt">
+	   <option value="size">Qt.</option>
+	    <option value="size">1</option>
+	    <option value="size">2</option>
+	    <option value="size">3</option>
+	    <option value="size">4</option>
+	    <option value="size">5</option>
+	  </select>
+	  <br><br>
+	 	 Name: <input type="text"><br><br>
+		Email: <input type="text"><br><br>
+		Adress:<input type="text"><br>
+		<br>
+		</form>
+		<input id="submit_button" type="submit" value="Send order" onclick="alert('Thank you!')"/>
+	</form>
+
+</body>
+</html>
