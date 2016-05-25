@@ -1,3 +1,9 @@
+body {
+	margin: auto;
+	padding: auto;
+	width: 100%;
+}
+
 .header img {
   float: left;
   width: 150px;
@@ -32,10 +38,12 @@ ul.nav_hbar {
     padding: 0;
     overflow: hidden;
     background-color:  #00b359;
+    width: 100%;
+
 }
 
-li {
-    float:right;
+.nav_hbar li{
+    float:left;
 }
 
 li a {
@@ -47,9 +55,10 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-ul.search li{
+li.search{
 	display: inline-block;
-	float: left;
+	float: right;
+	margin: 15px;
 }
 </li>
 
@@ -89,9 +98,11 @@ li a:hover:not(.active) {
     background-color: #555;
     color: white;
 }
-footer {
-	position: fixed;
+#footer {
+	float: left;
 	width: 100%;
 	bottom: 0;
+margin-top: 150px;
+
 }
 
