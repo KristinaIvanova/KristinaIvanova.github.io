@@ -35,19 +35,21 @@ ul.nav_hbar {
 }
 
 li {
-    float:left;
+    float:right;
 }
 
 li a {
     display: block;
+
     color: #000000;
+    margin:8px;
     text-align: left;
     padding: 14px 16px;
     text-decoration: none;
 }
 ul.search li{
 	display: inline-block;
-	float: right;
+	float: left;
 }
 </li>
 
