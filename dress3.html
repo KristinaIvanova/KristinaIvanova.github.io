@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 		<title>Infinity Online Store</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -14,7 +14,7 @@
 		<!-- Login form-->
 		<div align="right">
 		<nav>
-		<div class="loginform cf">
+		<div class="loginform">
 		<form name="login" action="index_submit" method="get">
 			<label for="usermail">Email</label>
 			        <input type="email" name="usermail" placeholder="yourname@email.com" required>
@@ -44,24 +44,35 @@
 	</ul>
 	</nav>
 	<div class="clear">
-
+	<br>
+	<!-- Vertical Navigation Bar -->
+			<aside>
+				<ul class="nav_bar">
+					<li><h3><a href="dress.html">Dress</a></h3></li>
+					<li><h3><a href="bags.html">Bags</a></h3></li>
+					<li><h3><a href="shoes.html">Shoes</a></h3></li>
+				</ul>		 
+			</aside>
+		</div>
+		<section>
 			<br>
-	<div align="left">
-	<h1>Information</h1>
-	<ul>
-	<li>Price: 130$</li>
-	<li>Model: Dress 003</li>
-	<li>Cotton blend dress.
-	Round neck with fastening detail.
-	Stretch insert at the waist.
-	Classic fit.</li>
-	</ul>
-	</div>
-	<hr>
-	<img src ="img/img3.jpg" alt = "Image1" style="width:400px; height:400px;">
-	<hr>
-	<table>
-					<table border="1">
+			<div align="left">
+			<h1>Information</h1>
+			<ul>
+				<li>Price: 130$</li><br>
+				<li>Model: Dress 001</li><br>
+				<li>Cotton blend dress.
+				Round neck with fastening detail.
+				Stretch insert at the waist.
+				Classic fit.</li>
+			</ul>
+			</div>
+			<br><br><br>
+			<hr>
+			<img src ="img/img3.jpg" alt = "Dress3" style="width:400px; height:400px;">
+			<hr>
+			<table>
+				<table border="1">
 					  <tr>
 					    <th>OUR SIZE</th>
 					    <th>UK</th>
@@ -89,30 +100,34 @@
 					  </tr>
 				</table>
 				<br><br>
-	<form action="action_page">
-	  <select name="size">
-	    <option value="size">Size</option>
-	    <option value="size">XS</option>
-	    <option value="size">S</option>
-	    <option value="size">M</option>
-	    <option value="size">L</option>
-	  </select>
-	  <form action="action_page">
-	  <select name="Qt">
-	   <option value="size">Qt.</option>
-	    <option value="size">1</option>
-	    <option value="size">2</option>
-	    <option value="size">3</option>
-	    <option value="size">4</option>
-	    <option value="size">5</option>
-	  </select>
-	  <br><br>
-	 	 Name: <input type="text"><br><br>
-		Email: <input type="text"><br><br>
-		Adress:<input type="text"><br>
-		<br>
-		<input id="submit_button" type="submit" value="Send order" onclick="alert('Thank you!')"/>
+				</table>
+					<form action="action_page">
+			  <select name="size">
+			    <option value="size">Size</option>
+			    <option value="size">XS</option>
+			    <option value="size">S</option>
+			    <option value="size">M</option>
+			    <option value="size">L</option>
+			  </select>
+			  <form action="action_page">
+			  <select name="Qt">
+			   <option value="size">Qt.</option>
+			    <option value="size">1</option>
+			    <option value="size">2</option>
+			    <option value="size">3</option>
+			    <option value="size">4</option>
+			    <option value="size">5</option>
+			  </select>
+			  <br><br>
+			 	 Name: <input type="text"><br><br>
+				Email: <input type="text"><br><br>
+				Adress:<input type="text"><br>
+				<br>
+				</form>
+				<input id="submit_button" type="submit" value="Send order" onclick="alert('Thank you!')"/>
 		</form>
+		</section>
+
 		<footer id="footer">
 		<hr>
 			<div class="clear"></div>

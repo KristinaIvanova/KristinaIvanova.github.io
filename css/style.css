@@ -129,6 +129,7 @@ article {
 }
 article img{
     height: 250px;
+    width: 200px;
 }
 
 /*details {
@@ -138,4 +139,3 @@ article img{
     margin-right: auto;*/
 
 }
-
