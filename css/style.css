@@ -135,9 +135,16 @@ li a:hover:not(.active) {
 }
 
 .products{
-    align-items: center;
-    width: 30px;
-    height: 20px;
+float: left;
+width: 1000px;
+padding-bottom: 100px;
+padding-left: 100px;
+padding-top: 50px;
+}
+
+.products img{
+    height: 200px;
+    width: 300px;
 }
 
 #footer{
@@ -177,4 +184,19 @@ article {
 article img{
     height: 300px;
     width: 300px;
+}
+.contact{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    padding-left: 250px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.loginform{
+    float: right;
+}
+.logout{
+     float: right;
 }
