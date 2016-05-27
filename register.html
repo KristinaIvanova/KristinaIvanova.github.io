@@ -26,26 +26,62 @@
     <li class="search"><input type=search results=5></li> 
   </ul>
   </nav>
-  <div class="clear">
+<!-- Vertical Navigation Bar -->
+      <aside>
+        <ul class="nav_bar">
+          <li><h3><a href="dress.html">Dress</a></h3></li>
+          <li><h3><a href="bags.html">Bags</a></h3></li>
+          <li><h3><a href="shoes.html">Shoes</a></h3></li>
+        </ul>    
+      </aside>
 
-            <h1>Registration</h1>
-            
-        <fieldset>
-          <legend><span class="number"></span>Info</legend>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="user_name">
-          
-          <label for="mail">Email:</label>
-          <input type="email" id="mail" name="user_email">
-          
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="user_password">
-          <br>
-          <label>Gender</label>
-          <input type="radio" id="Female" value="Female" name="user_gender"><label for="Female" class="light">Female</label>
-          <input type="radio" id="Male" value="Male" name="user_gender"><label for="Male" class="light">Male</label>
-        </fieldset>
-        <fieldset>
+<section>
+  <form id = "registration-form">
+     <fieldset>
+       <legend>
+
+      <h2>Registration</h2>
+    </legend>
+   <fieldset>                   
+    <form action="" method="post">
+        *Username: <br> 
+    <input type="text" name="username" id="username" placeholder="Username" pattern=".{6,}" title="Six or more characters" autofocus required>
+      <br>
+      *Password:
+      <br><input type="password" name="pw" pattern=".{6,}" placeholder="Password" title="Six or more characters">
+      <br>
+      </form>
+      </fieldset>
+                                               
+               <fieldset>
+                  <legend><strong>Personal information</strong> </legend>
+                  * First name:<br>
+                  <input type="text" placeholder="Enter your first name"  name="firstname"  required>
+                  <br>
+                  * Last name:<br>
+                  <input type="text" placeholder="Enter your "  name="lastname"  required>
+                  <br>
+                  Date of birth:
+                  <br>
+                  <input type="date" name="bday">
+                  <br>
+                  Gender
+                  <br>
+                  <label><input type="radio" name="gender" value="male"> Male<br></label>
+                  <label> <input type="radio" name="gender" value="female"> Female<br></label>
+                  <br>
+               </fieldset>
+               <fieldset>
+                  <legend><strong>Contacts</strong></legend>
+                  * E-mail:
+                  <br>
+                  <input type="email" placeholder="Enter your e-mail" name="email-address"  required>
+                  <br>
+                  Telephone:<br>
+                  <input type="tel" placeholder="" name="telephone"><br>
+               </fieldset>
+               <br>
+               <fieldset>
         <label for="country">Country</label>
         <select id="country" name="user_country">
           <optgroup label="Country">
@@ -62,8 +98,13 @@
             </optgroup>
             </select>
             </fieldset>
+         </form>
+   
+<br>
          <input id="register_button" type="submit" value="Register" onclick="alert('Thank you!')"/>
          <div class="content" align="center">
+         </section>
+         <br><br>
      <footer id="footer">
       <div class="clear"></div>
        <div class="content" align="center">
