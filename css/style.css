@@ -11,7 +11,6 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
@@ -45,6 +44,7 @@ body {
 aside {
 	float: left;
 	width: 300px;
+    padding-top: 5%;
 }
 section{
     float:left;
@@ -60,25 +60,85 @@ section{
 	clear: both;
 }
 	/* Horizontal Navigation bar */
+.hbar{
+    padding-top: 50px;
+}
+.nav_hbar {
+list-style-type: none;
+overflow: hidden;
+background-color:  #00b359;
+width: 100%;
+font-size: medium;
+font-style: inherit;
+padding-right: 20px;
+padding-left: 20px;
+text-align: center;
+font-weight: bold;
+font-size: 20px;
+}
+.nav_hbar li{
+float:left;
+text-align: center;
+padding-right: 50px;
+padding-left: 50px;
 
-ul.nav_hbar {
+
+}
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:  #00b359;
-    width: 100%;
-    border:1px solid #000000;
-
-
-
+    background-color: #00b359;
+}
+.nav_bar li{
+     float: left;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.hbar li {
+    float: left;
+    padding-right: 20px;
 }
 
-.nav_hbar li{
-    float:left;
-
-
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #4AE371;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4AE371 ;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #33CC66 }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 li a {
     display: block;
@@ -87,7 +147,7 @@ li a {
     margin:8px;
     text-align: left;
     padding: 14px 16px;
-    text-decoration: none;
+    
 }
 li.search{
 	display: inline-block;
@@ -97,7 +157,8 @@ li.search{
 </li>
 
 li a:hover {
-    background-color: #C8C8C8   ;
+    padding-right: 100px;
+    background-color: #4AE371;
 }
 
 	/* Vertical Navigation Bar*/
@@ -114,7 +175,7 @@ li a:hover {
 .nav_bar li {
 	float: none;
 	border:1px solid #000000;
-}
+  }
 
 li a {
     display: block;
@@ -122,18 +183,11 @@ li a {
     padding: 30px 0 8px 16px;
     text-decoration: none;
     margin: 0;
-}
+     text-align: center;
+     font-weight: bold;
+     font-size: 20px;
 
-li a.active {
-    background-color: #4CAF50;
-    color: white;
 }
-
-li a:hover:not(.active) {
-    background-color: #4AE371;
-    color: white;
-}
-
 .products{
 float: left;
 width: 1000px;
@@ -199,4 +253,11 @@ article img{
 }
 .logout{
      float: right;
+}
+#registration-form{
+    font-size: 20px;
+    text-align: center;
+    border:1px solid #000000;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }

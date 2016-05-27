@@ -1,45 +1,88 @@
-
 <!DOCTYPE html>
-<head>
-<body itemscope itemtype="http://schema.org/Blog">
- <header>
-  <h1>Wake up sheeple!</h1>
-  <p><a href="news.html">News</a> -
-     <a href="blog.html">Blog</a> -
-     <a href="forums.html">Forums</a></p>
-  <p>Last Modified: <span itemprop="dateModified">2009-04-01</span></p>
-  <nav>
-   <h1>Navigation</h1>
-   <ul>
-    <li><a href="articles.html">Index of all articles</a></li>
-    <li><a href="today.html">Things sheeple need to wake up for today</a></li>
-    <li><a href="successes.html">Sheeple we have managed to wake</a></li>
-   </ul>
+<html>
+  <head>
+  <title>Infinity Online Store</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+  <div>
+  <header>
+      <div class="header">
+        <img src="img/logo01.png" alt="logo" />
+      </div>
+      <br>
+<!-- Login form-->
+    <nav>
+    <div class="loginform">
+    <form name="login" action="index_submit" method="get">
+      <label for="usermail">Email</label>
+              <input type="email" name="usermail" placeholder="yourname@email.com" required>
+      <label for="password">Password</label>
+              <input type="password" name="password" placeholder="password" required>
+              <input type="submit" value="Login">
+    </form>
+    </div>
+    <br><br>
+    <div class= "logout">
+        <a href="Register.html">Register</a> |
+        <a href="index.html">Logout</a>
+    </div>
+    </nav>
+      
+  </header>
+
+<!-- Horizontal Navigation bar -->
+  <nav class = "hbar"> 
+  <ul>
+    <li><strong><a class="nav_hbar" href="index.html"> Home </a></strong></li>
+    <li class="dropdown">
+    <strong><a href="#" class="nav_hbar" class="dropbtn"> Products </a></strong>
+        <div class="dropdown-content">
+          <a href="dress.html">Dress</a>
+          <a href="bags.html">Bags</a>
+          <a href="shoes.html">Shoes</a>
+          </div>
+          </li>
+    <li><strong><a class="nav_hbar" href="contacts.html"> Contact </a></strong></li>
+ 
+
+ <!--Search-->
+  
+    <li class="search"><input type=search results=5></li> 
+  </ul>
   </nav>
- </header>
- <main>
-  <article itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
-   <header>
-    <h1 itemprop="headline">My Day at the Beach</h1>
-   </header>
-   <div itemprop="articleBody">
-    <p>Today I went to the beach and had a lot of fun.</p>
-    ...more content...
-   </div>
-   <footer>
-    <p>Posted <time itemprop="datePublished" datetime="2009-10-10">Thursday</time>.</p>
-   </footer>
-  </article>
-  ...more blog posts...
- </main>
- <footer>
-  <p>Copyright ©
-   <span itemprop="copyrightYear">2010</span>
-   <span itemprop="copyrightHolder">The Example Company</span>
-  </p>
-  <p><a href="about.html">About</a> -
-     <a href="policy.html">Privacy Policy</a> -
-     <a href="contact.html">Contact Us</a></p>
- </footer>
-</body>
-</head>
+  <div class="clear">
+
+      <br>
+    <!--Article -->
+      <article class="content">
+            <img src ="img/shopping.jpg" alt = "Image1" style="width:500px; height:400px;">
+      </article>
+    <!-- Vertical Navigation Bar -->
+      <aside>
+        <ul class="nav_bar">
+          <li><h3><a href="dress.html">Dress</a></h3></li>
+          <li><h3><a href="bags.html">Bags</a></h3></li>
+          <li><h3><a href="shoes.html">Shoes</a></h3></li>
+        </ul>    
+      </aside>
+
+    <footer id="footer">
+      <div class="clear"></div>
+       <div class="content" align="center">
+      
+      
+        <p>Copyright ©
+         <span itemprop="copyrightYear">2016</span>
+         <span itemprop="copyrightHolder">Infinity Online Store</span>
+        </p>
+        <p><a href="index.html">Home</a> -
+           <a href="products.html">Products</a> -
+           <a href="contacts.html">Contact Us</a></p>
+
+    
+     </footer>
+  </body> 
+  
+</html>
