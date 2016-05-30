@@ -76,43 +76,55 @@ section{
   height: 450px;
   padding-left: 50px;
 }
+/*New Label*/
+.fishes { 
+  position: absolute; top: 0; left: 0; 
+  } 
+  .fish {
+    position: absolute;
+     top: 0px; 
+     right: 0px;
+     }
 	/* Horizontal Navigation bar */
-}
-}
 .hbar{
     padding-top: 50px;
 }
 .nav_hbar {
 list-style-type: none;
 overflow: hidden;
-/*background-color:  #00b359;*/
-
-font-size: medium;
-font-style: inherit;
+z-index: 2;
 padding-right: 20px;
-padding-left: 20px;
-text-align: center;
-font-weight: bold;
-font-size: 20px;
+    padding-left: 20px;
+    text-align: center;
+    font-size: 1.3em;
+    font-style: oblique;
+    font-weight: bold;
+/*background-color:  #00b359;*/
 }
 .nav_hbar li{
 float:left;
 text-align: center;
 padding-right: 50px;
 padding-left: 50px;
+}
+nav li a:hover{
+   width:100px;
 
+}
 
+.nav_bar li a:hover{
+  width:82px;
 }
 nav ul {
     list-style-type: none;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 0px;
     width: 1100px;
     padding: 0;
     overflow: hidden;
     background-color: #00b359;
 }
-nav.nav_bar li{
+li.nav_bar {
      float: left;
     padding-right: 0px;
     padding-left: 0px;
@@ -120,8 +132,21 @@ nav.nav_bar li{
 .hbar li {
     float: left;
     padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    text-align: center;
 }
-
+nav li a {
+    display: block;
+    color: #000;
+    padding: 30px 0 8px 16px;
+    text-decoration: none;
+    margin: 0;
+     text-align: center;
+    font-size: 1.3em;
+    font-style: oblique;
+    font-weight: bold;
+}
 li a, .dropbtn {
     display: inline-block;
     color: black;
@@ -160,14 +185,15 @@ li.dropdown {
     display: block;
 }
 
-
-nav li a {
+/*Search position*/
+nav li a: last-child {
     display: block;
-
     color: #000000;
     margin:8px;
     text-align: left;
     padding: 14px 16px;
+    padding-top: 0px;
+    padding-bottom: 15px;
     
 }
 li.search{
@@ -196,18 +222,8 @@ li a:hover {
 	float: none;
 	border:1px solid #000000;
   }
+/*Horizontal navigation bar position*/
 
-nav li a {
-    display: block;
-    color: #000;
-    padding: 30px 0 8px 16px;
-    text-decoration: none;
-    margin: 0;
-     text-align: center;
-     font-weight: bold;
-     font-size: 20px;
-
-}
 .products{
 float: left;
 width: 1000px;
@@ -230,11 +246,14 @@ clear: both;
 padding-top: 10px;
 border-top: 1px solid #000;
 text-align: center;
-
 }
 
 h3 {
     margin: 0;
+    text-align: center;
+    font-size: 1.3em;
+    font-style: oblique;
+    font-weight: bold;
 }
 .article {
     margin-left: 100px;
@@ -248,6 +267,12 @@ h3 {
   /*padding-top: 50px;
   padding-left: 50px;*/
 }
+.picture{
+   display: inline-block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
 
 article {
     float:left;
@@ -257,7 +282,7 @@ article {
  article table {
     width: 250px;
     height: 150px;
-    margin: 5px;
+    margin-top: 280px;
 
 }
 article img{
