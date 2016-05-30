@@ -1,88 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <title>Infinity Online Store</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
   <div>
-  <header>
+    <header>
       <div class="header">
         <img src="img/logo01.png" alt="logo" />
       </div>
       <br>
 <!-- Login form-->
-    <nav>
-    <div class="loginform">
+<nav>
+  <div class="loginform">
     <form name="login" action="index_submit" method="get">
       <label for="usermail">Email</label>
-              <input type="email" name="usermail" placeholder="yourname@email.com" required>
+      <input type="email" name="usermail" placeholder="yourname@email.com" required>
       <label for="password">Password</label>
-              <input type="password" name="password" placeholder="password" required>
-              <input type="submit" value="Login">
+      <input type="password" name="password" placeholder="password" required>
+      <input type="submit" value="Login">
     </form>
-    </div>
-    <br><br>
-    <div class= "logout">
-        <a href="register.html">Register</a> |
-        <a href="index.html">Logout</a>
-    </div>
-    </nav>
-      
-  </header>
-
+  </div>
+</div>
+<br><br>
+<div class= "logout">
+  <a href="register.html">Register</a> |
+  <a href="index.html">Logout</a>
+</div>
+</nav>
+</header>
 <!-- Horizontal Navigation bar -->
-  <nav class = "hbar"> 
+<nav class = "hbar"> 
   <ul>
-    <li><strong><a class="nav_hbar" href="index.html"> Home </a></strong></li>
+    <li><div id="anchors"><a href="#main_index_info"> Home </a></div></li>
     <li class="dropdown">
-    <strong><a href="products.html" class="nav_hbar" class="dropbtn"> Products </a></strong>
-        <div class="dropdown-content">
-          <a href="dress.html">Dress</a>
-          <a href="bags.html">Bags</a>
-          <a href="shoes.html">Shoes</a>
-          </div>
-          </li>
-    <li><strong><a class="nav_hbar" href="contacts.html"> Contact </a></strong></li>
- 
-
- <!--Search-->
-  
+      <a href="products.html" class="nav_hbar" class="dropbtn"> Products </a>
+      <div class="dropdown-content">
+        <a href="dress.html">Dress</a>
+        <a href="bags.html">Bags</a>
+        <a href="shoes.html">Shoes</a>
+      </div>
+    </li>
+    <li><a class="nav_hbar" href="contacts.html"> Contact </a></li>
+    <!--Search-->
     <li class="search"><input type=search results=5></li> 
   </ul>
-  </nav>
-  <div class="clear">
-
-      <br>
+</nav>
+<div class="clear"></div>
+  <br>
     <!--Article -->
-      <article class="content">
-            <img src ="img/shopping.jpg" alt = "Image1" style="width:500px; height:400px;">
+    <section class="content">
+      <article class="main-image">
+        <img src ="img/shopping.jpg" alt = "Image1">
       </article>
+      <article id="main_index_info" name="main_index_info">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed tristique elit, vitae accumsan dolor. </p>
+        <p>Vestibulum nulla libero, egestas nec turpis egestas, dictum venenatis velit. Integer ex justo, dictum a tellus et, luctus euismod tellus.</p>
+        <p>Maecenas condimentum tortor eu risus efficitur commodo. Nulla libero quam, pretium at quam vel, hendrerit mattis lorem. Nullam hendrerit a justo ac ultrices.</p> 
+      </article>
+    </section>
     <!-- Vertical Navigation Bar -->
-      <aside>
-        <ul class="nav_bar">
-          <li><h3><a href="dress.html">Dress</a></h3></li>
-          <li><h3><a href="bags.html">Bags</a></h3></li>
-          <li><h3><a href="shoes.html">Shoes</a></h3></li>
-        </ul>    
-      </aside>
-
+    <aside>
+      <ul class="nav_bar">
+        <li><h3><a href="dress.html">Dress</a></h3></li>
+        <li><h3><a href="bags.html">Bags</a></h3></li>
+        <li><h3><a href="shoes.html">Shoes</a></h3></li>
+      </ul>    
+    </aside>
+    <!--Footer-->
     <footer id="footer">
       <div class="clear"></div>
-       <div class="content" align="center">
-      
-      
+      <div class="content" align="center">
+
+
         <p>Copyright ©
          <span itemprop="copyrightYear">2016</span>
          <span itemprop="copyrightHolder">Infinity Online Store</span>
-        </p>
-        <p><a href="index.html">Home</a> -
-           <a href="products.html">Products</a> -
-           <a href="contacts.html">Contact Us</a></p>
-
-    
-     </footer>
+       </p>
+       <p><a href="index.html">Home</a> -
+         <a href="products.html">Products</a> -
+         <a href="contacts.html">Contact Us</a></p>
+       </footer>
   </body> 
-  
 </html>

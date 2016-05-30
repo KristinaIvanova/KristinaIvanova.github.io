@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Infinity Online Store</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Infinity Online Store</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-  <div>
-  <header>
-      <div class="header">
-        <img src="img/logo01.png" alt="logo" />
-      </div>
-      <br>
-<!-- Login form-->
+    <header>
+    <div class="header">
+      <img src="img/logo01.png" alt="logo" />
+    </div>
+    <br>
+    <!-- Login form-->
+    <div align="right">
     <nav>
     <div class="loginform">
     <form name="login" action="index_submit" method="get">
@@ -23,39 +23,29 @@
               <input type="submit" value="Login">
     </form>
     </div>
-    <br><br>
-    <div class= "logout">
-        <a href="register.html">Register</a> |
-        <a href="index.html">Logout</a>
-    </div>
+        <a href="Register.html">Register</a> |
+        <a href="index.html">Logout</a> 
     </nav>
-      
-  </header>
-
-<!-- Horizontal Navigation bar -->
-  <nav class = "hbar"> 
-  <ul>
-    <li><strong><a class="nav_hbar" href="index.html"> Home </a></strong></li>
-    <li class="dropdown">
-    <strong><a href="#" class="nav_hbar" class="dropbtn"> Products </a></strong>
-        <div class="dropdown-content">
-          <a href="dress.html">Dress</a>
-          <a href="bags.html">Bags</a>
-          <a href="shoes.html">Shoes</a>
-          </div>
-          </li>
-    <li><strong><a class="nav_hbar" href="contacts.html"> Contact </a></strong></li>
- 
-
+    <div align="center">
+        <h1 style="color:blue;">Infinity Online Store</h1>
+    </div>
+    </header>
+    <!-- Horizontal Navigation bar -->
+    <nav> 
+  <ul class="nav_hbar">
+    <li><strong><a href="index.html">Home</a></strong></li>
+    <li><strong><a href="products.html">Products</a></strong></li>
+    <li><strong><a href="contacts.html">Contact</a></strong></li>
+  
  <!--Search-->
   
+
     <li class="search"><input type=search results=5></li> 
   </ul>
   </nav>
   <div class="clear">
-
-      <br>
-    <!-- Vertical Navigation Bar -->
+  <br>
+  <!-- Vertical Navigation Bar -->
       <aside>
         <ul class="nav_bar">
           <li><h3><a href="dress.html">Dress</a></h3></li>
@@ -63,22 +53,85 @@
           <li><h3><a href="shoes.html">Shoes</a></h3></li>
         </ul>    
       </aside>
-      <!-- End navigation bar-->
-      <section id="wrapper">
-      <article class="item">
-        <a href="dress.html"><img src ="img/4.png" alt = "Dress1"></a>
-        </article>
-        <article class="item">
-        <a href="bags.html"><img src ="img/3.png" alt = "Bags1"></a>
-        </article>
-        <article class="item">
-        <a href="shoes.html"><img src ="img/2.png" alt = "Shoes1"></a>
-      </article>
+    </div>
+    <section>
+      <br>
+      <!--End vertical navigation-->
+      
+      <div align="left">
+      <h1>Information</h1>
+      <ul>
+        <li>Price: 130$</li><br>
+        <li>Model: Dress 001</li><br>
+        <li>Cotton blend dress.
+        Round neck with fastening detail.
+        Stretch insert at the waist.
+        Classic fit.</li>
+      </ul>
+      </div>
+      <br><br><br>
+      <hr>
+      <img src ="img/img1.jpg" alt = "Dress1" style="width:400px; height:400px;">
+      <hr>
+      <table>
+        <table border="1">
+            <tr>
+              <th>OUR SIZE</th>
+              <th>UK</th>
+              <th>ES</th>
+            </tr>
+            <tr>
+              <td>36 (XS)</td>
+              <td>6</td>
+              <td>34</td>
+            </tr>
+            <tr>
+              <td>38 (S)</td>
+              <td>8</td>
+              <td>36</td>
+            </tr>
+            <tr>
+              <td>40 (M)</td>
+              <td>10</td>
+              <td>38</td>
+            </tr>
+            <tr>
+              <td>42 (L)</td>
+              <td>12</td>
+              <td>40</td>
+            </tr>
+        </table>
+        <br><br>
+        </table>
+          <form action="action_page">
+        <select name="size">
+          <option value="size">Size</option>
+          <option value="size">XS</option>
+          <option value="size">S</option>
+          <option value="size">M</option>
+          <option value="size">L</option>
+        </select>
+        <form action="action_page">
+        <select name="Qt">
+         <option value="size">Qt.</option>
+          <option value="size">1</option>
+          <option value="size">2</option>
+          <option value="size">3</option>
+          <option value="size">4</option>
+          <option value="size">5</option>
+        </select>
+        <br><br>
+         Name: <input type="text"><br><br>
+        Email: <input type="text"><br><br>
+        Adress:<input type="text"><br>
+        <br>
+        </form>
+        <input id="submit_button" type="submit" value="Send order" onclick="alert('Thank you!')"/>
+      </form>
       </section>
 
-
-<!--Footer-->
     <footer id="footer">
+  
       <div class="clear"></div>
        <div class="content" align="center">
       
@@ -93,6 +146,6 @@
 
     
      </footer>
-  </body> 
-  
+
+</body>
 </html>
