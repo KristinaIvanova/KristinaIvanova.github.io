@@ -22,8 +22,8 @@ time, mark, audio, video {
 }
 
 body {
-	margin: auto;
-	width: 1100px;
+   margin: auto;
+   width: 1100px;
     margin-left: auto;
     margin-right: auto;
     background: url(./images/masterpage.jpg); 
@@ -43,19 +43,20 @@ body {
 }
 
 aside {
-	float: left;
-	width: 200px;
+   float: left;
+   width: 200px;
     padding-top: 5%;
 }
 section{
     float:left;
     width: 750px;
     padding-left: 100px;
+    padding-top: 70px;
    
 } 
 .content {
-	float: right;
-	width: 70%;
+   float: right;
+   width: 70%;
 }
 .content p{
   font-size: 1em;
@@ -64,7 +65,7 @@ section{
 
 
 .clear {
-	clear: both;
+   clear: both;
 }
 
 .main-image{
@@ -84,21 +85,24 @@ section{
     position: absolute;
      top: 0px; 
      right: 0px;
+     left: 1px;
      }
-	/* Horizontal Navigation bar */
+   /* Horizontal Navigation bar */
 .hbar{
     padding-top: 50px;
 }
 .nav_hbar {
-list-style-type: none;
-overflow: hidden;
-z-index: 2;
-padding-right: 20px;
-    padding-left: 20px;
-    text-align: center;
-    font-size: 1.3em;
-    font-style: oblique;
-    font-weight: bold;
+  list-style-type: none;
+  overflow: hidden;
+  z-index: 2;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+  font-size: 1.3em;
+  font-style: oblique;
+  font-weight: bold;
+  width: 100px;
+  height:100%;
 /*background-color:  #00b359;*/
 }
 .nav_hbar li{
@@ -106,6 +110,7 @@ float:left;
 text-align: center;
 padding-right: 50px;
 padding-left: 50px;
+
 }
 nav li a:hover{
    width:100px;
@@ -133,16 +138,15 @@ li.nav_bar {
     float: left;
     padding-right: 20px;
     padding-top: 0px;
-    padding-bottom: 15px;
     text-align: center;
 }
 nav li a {
     display: block;
     color: #000;
-    padding: 30px 0 8px 16px;
+    padding: 12px 0 12px 16px;
     text-decoration: none;
     margin: 0;
-     text-align: center;
+    text-align: center;
     font-size: 1.3em;
     font-style: oblique;
     font-weight: bold;
@@ -156,7 +160,15 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: #4AE371;
+  /*  background-color: #4AE371;*/
+}
+
+.hbar li a:hover {
+  background-color: #4AE371;
+}
+
+.nav_bar li a:hover {
+  background-color: #4AE371;
 }
 
 li.dropdown {
@@ -183,6 +195,7 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
     display: block;
+    background-color: #33CC66
 }
 
 /*Search position*/
@@ -197,17 +210,17 @@ nav li a: last-child {
     
 }
 li.search{
-	display: inline-block;
-	float: right;
-	margin: 15px;
+   display: inline-block;
+   float: right;
+   margin: 15px;
 }
 
 li a:hover {
     padding-right: 100px;
-    background-color: #4AE371;
+   /* background-color: #4AE371;*/
 }
 
-	/* Vertical Navigation Bar*/
+   /* Vertical Navigation Bar*/
 
  ul.nav_bar {
     list-style-type: none;
@@ -219,8 +232,8 @@ li a:hover {
 }
 
 .nav_bar li {
-	float: none;
-	border:1px solid #000000;
+   float: none;
+   border:1px solid #000000;
   }
 /*Horizontal navigation bar position*/
 
@@ -333,8 +346,9 @@ h1
 {
   text-align:center;
   font-size:35px;
-  margin-top:60px;
+  /*margin-top:60px;*/
   color:#A9BCF5;
+  padding-top: 20px;
 }
 h1 p
 {
@@ -427,10 +441,36 @@ h1 p
 }
 
 
+/*Magnifier*/
+* {margin: 0; padding: 0;}
+.magnify {width: 200px; margin: 50px auto; position: relative;}
+
+/*Lets create the magnifying glass*/
+.large {
+   width: 250px; height: 250px;
+   position: absolute;
+   border-radius: 100%;
+
+   /*Multiple box shadows to achieve the glass effect*/
+   box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),
+   0 0 7px 7px rgba(0, 0, 0, 0.25),
+   inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+
+   /*Lets load up the large image first*/
+   background: url('http://img1.promgirl.com/_img/PGPRODUCTS/1417606/1000/red-ivory-dress-DJ-1435-a.jpg') no-repeat;
+
+   /*hide the glass by default*/
+   display: none;
+}
+/*To solve overlap bug at the edges during magnification*/
+.small { display: block; }
+
+/*End of Magnifier*/
+
+
 /*Hack*/
 @-moz-document url-prefix() {
  body{
   background: pink;
  }
 }
-        
