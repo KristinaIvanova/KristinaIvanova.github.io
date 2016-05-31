@@ -120,7 +120,7 @@ nav li a:hover{
 .nav_bar li a:hover{
   width:82px;
 }
-nav ul {
+nav ul  {
     list-style-type: none;
     margin-top: 20px;
     margin-left: 0px;
@@ -346,7 +346,6 @@ h1
 {
   text-align:center;
   font-size:35px;
-  /*margin-top:60px;*/
   color:#A9BCF5;
   padding-top: 20px;
 }
@@ -370,7 +369,8 @@ h1 p
   width:250px;
   height:220px;
  margin-right: 10px;
-  border:1px solid #000000;
+ border:1px solid #000000;
+
 }
 .item img 
 {
@@ -379,13 +379,17 @@ h1 p
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   width:250px;
-  height:220px;
+  height:220px; 
+
 }
 .item:hover img 
 {
   -moz-transform: scale(1.3);
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
+  border:1em solid transparent;
+  padding: 1px;
+  border-image: url('./images/border.bmp') 35 stretch;
 }
 /*Efect over Images*/
 .view-eighth figure .mask {
@@ -457,10 +461,12 @@ h1 p
    inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
 
    /*Lets load up the large image first*/
-   background: url('http://img1.promgirl.com/_img/PGPRODUCTS/1417606/1000/red-ivory-dress-DJ-1435-a.jpg') no-repeat;
+   background: url('./images/img1.jpg') no-repeat;
+
 
    /*hide the glass by default*/
    display: none;
+
 }
 /*To solve overlap bug at the edges during magnification*/
 .small { display: block; }
@@ -489,6 +495,8 @@ h1 p
     font-family: 'Lobster', cursive;
     background-color: #00b359;
   }
+/* End Multiple Columns*/
+
 /*Hack*/
 @-moz-document url-prefix() {
  body{
