@@ -14,18 +14,24 @@
        </header>
 
       <!-- Horizontal Navigation bar -->
-  <nav> 
-  <ul class="nav_hbar">
-    <li><strong><a href="index.html">Home</a></strong></li>
-    <li><strong><a href="products.html">Products</a></strong></li>
-    <li><strong><a href="contacts.html">Contact</a></strong></li>
-  
- <!--Search-->
-  
-
-    <li class="search"><input type=search results=5></li> 
-  </ul>
-  </nav>
+  <nav class = "hbar">
+    <ul>
+        <li><a class="nav_hbar" href="index.html"> Home </a></li>
+        <li class="dropdown">
+            <a href="products.html" class="nav_hbar" class="dropbtn"> Products </a>
+            <div class="dropdown-content">
+                <a href="dress.html">Dress</a>
+                <a href="bags.html">Bags</a>
+                <a href="shoes.html">Shoes</a>
+            </div>
+        </li>
+        <li><a class="nav_hbar" href="contacts.html"> Contact </a></li>
+                <!--Search-->
+        <li class="search"><input type=search results=5></li>
+    </ul>
+</nav>
+<div class="clear"></div>
+<br>
 <!-- Vertical Navigation Bar -->
       <aside>
         <ul class="nav_bar">
@@ -101,7 +107,9 @@
          </form>
    
           <br>
+          <div align="center">
          <input id="register_button" type="submit" value="Register" onclick="alert('Thank you!')"/>
+         </div>
          <div class="content" align="center">
          <br>
          </section>
