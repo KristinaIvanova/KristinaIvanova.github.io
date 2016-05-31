@@ -467,10 +467,32 @@ h1 p
 
 /*End of Magnifier*/
 
-
+/*Multiple Columns*/
+#main_index_info{-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+   -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px; /* Firefox */
+    column-gap: 20px;
+    -webkit-column-rule: 2px solid #33CC66; /* Chrome, Safari, Opera */
+    -moz-column-rule: 2px solid #33CC66; /* Firefox */
+    column-rule: 2px solid #33CC66;
+  }
+ article#main_index_info h4 {
+    -webkit-column-span: all; /* Chrome, Safari, Opera */
+    column-span: all;
+    font-family: 'Lobster', cursive;
+  }
+  article#main_index_info h3 {
+    -webkit-column-span: all; /* Chrome, Safari, Opera */
+    column-span: all;
+    font-family: 'Lobster', cursive;
+    background-color: #00b359;
+  }
 /*Hack*/
 @-moz-document url-prefix() {
  body{
   background: pink;
  }
 }
+/*End Hack*/
