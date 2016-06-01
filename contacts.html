@@ -4,6 +4,7 @@
 	<title>Infinity Online Store</title>
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		 <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 	<div>
@@ -13,9 +14,9 @@
 			</div>
 			<br>
 			<!-- Login form-->
-			<div align="right">
+			<div>
 				<nav>
-					<div class="loginform cf">
+					<div class="loginform">
 						<form name="login" action="index_submit" method="get">
 							<label for="usermail">Email</label>
 							<input type="email" name="usermail" placeholder="yourname@email.com" required>
@@ -65,17 +66,16 @@
 
 			<br>
 			<article class = "contact">
-	<div align="center">
-		<h1 style="color:blue;">Contact</h1>
-	<h2>
+		<h1>Contact</h1>
+	<h4>
 	<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
 		<div class="row">
 			<label for="name">Your name:</label><br />
-			<input id="name" class="input" name="name" type="text" value="" size="40" /><br />
+			<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
 		</div>
 		<div class="row">
 			<label for="email">Your email:</label><br />
-			<input id="email" class="input" name="email" type="text" value="" size="40" /><br />
+			<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
 		</div>
 		<div class="row">
 			<label for="message">Your message:</label><br />
@@ -86,7 +86,7 @@
 		<br>
 		<input id="submit_button" type="submit" value="Send email" onclick="alert('Thank you!')"/>
 	</form>	
-	</h2>
+	</h4>
 	</article>
 	<br>
 	<footer id="footer">

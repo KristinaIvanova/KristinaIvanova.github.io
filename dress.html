@@ -4,6 +4,7 @@
    <title>Infinity Online Store</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <header>
@@ -34,15 +35,16 @@
 <!-- Horizontal Navigation bar -->
 <nav class = "hbar">
     <ul>
-        <li><a class="nav_hbar" href="index.html"> Home </a></li>
+        <li><div id="anchors"><a class="nav_hbar"  href="aboutus.html" href="#main_index_info"> About us </a></div></li>
         <li class="dropdown">
             <a href="products.html" class="nav_hbar" class="dropbtn"> Products </a>
             <div class="dropdown-content">
                 <a href="dress.html">Dress</a>
-                <a href="bags.html">Bags</a>
-                <a href="shoes.html">Shoes</a>
+                <a href=#>Bags</a>
+                <a href=#>Shoes</a>
             </div>
-        </li>
+        </li> 
+         <li><a class="nav_hbar" href="slices.html"> New </a></li>
         <li><a class="nav_hbar" href="contacts.html"> Contact </a></li>
                 <!--Search-->
         <li class="search"><input type=search results=5></li>
@@ -51,20 +53,20 @@
 <div class="clear"></div>
 <br>
 <!-- Vertical Navigation Bar -->
-<aside>
-    <ul class="nav_bar">
-        <li><h3><a href="dress.html">Dress</a></h3></li>
-        <li><h3><a href="bags.html">Bags</a></h3></li>
-        <li><h3><a href="shoes.html">Shoes</a></h3></li>
-    </ul>
-</aside>
-	<h1>DRESS</h1>
+ <aside>
+        <ul class="nav_bar">
+            <li><h3><a href="dress.html">Dress</a></h3></li>
+            <li><h3><a href=#>Bags</a></h3></li>
+            <li><h3><a href=#>Shoes</a></h3></li>
+        </ul>
+    </aside>
+	<h1>Dress</h1>
 <section>
     <article class="article-images">
         <ul>
             <li class="view view-eighth">
                 <figure>
-                    <div  style="position: relative; left: 0; top: 0;">
+                    <div class="position-img">
                         <a class = "picture" href="dress1.html"><img src= "img/img1.jpg" alt = "Dress001" class="fishes"/>
                             <img src="img/new_label.png" class="fish"/></a>
                     </div>
@@ -96,7 +98,7 @@
         <ul>
             <li class="view view-eighth">
                 <figure>
-                    <div  style="position: relative; left: 0; top: 0;">
+                    <div class="position-img">
                         <a class = "picture" href="dress2.html"><img src= "img/img2.jpg" alt = "Dress002" class="fishes"/>
                          </a>
                     </div>
@@ -128,7 +130,7 @@
         <ul>
             <li class="view view-eighth">
                 <figure>
-                    <div  style="position: relative; left: 0; top: 0;">
+                    <div class="position-img">
                         <a class = "picture" href="dress1.html"><img src= "img/img3.jpg" alt = "Dress003" class="fishes"/>
                         </a>
                     </div>
@@ -160,7 +162,7 @@
         <ul>
             <li class="view view-eighth">
                 <figure>
-                    <div  style="position: relative; left: 0; top: 0;">
+                    <div class="position-img">
                         <a class = "picture" href="dress4.html"><img src= "img/img4.jpg" alt = "Dress004" class="fishes"/>
                             <img src="img/new_label.png" class="fish"/></a>
                     </div>
@@ -192,7 +194,7 @@
         <ul>
             <li class="view view-eighth">
                 <figure>
-                    <div  style="position: relative; left: 0; top: 0;">
+                    <div class="position-img">
                         <a class = "picture" href="dress1.html"><img src= "img/img5.jpg" alt = "Dress005" class="fishes"/>
                             <img src="img/new_label.png" class="fish"/></a>
                     </div>
@@ -222,7 +224,7 @@
     </article>
 <footer id="footer">
     <div class="clear"></div>
-    <div class="content" align="center">
+    <div class="content">
         <p>Copyright ©
             <span itemprop="copyrightYear">2016</span>
             <span itemprop="copyrightHolder">Infinity Online Store</span>
