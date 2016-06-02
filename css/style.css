@@ -22,6 +22,7 @@ time, mark, audio, video {
     outline: 0;
 }
 /*End Reset*/
+/*Body*/
 body {
     margin: auto;
     width: 1100px;
@@ -34,21 +35,24 @@ body {
     float: left;
     width: 150px;
     height: 100px;
-    background: #555;
 }
 .header h1 {
     position: relative;
     top: 18px;
     left: 10px;
 }
-/*End header*/
-/*Aside*/
-aside {
-    float: left;
-    width: 200px;
-    padding-top: 5%;
+/*Login form*/
+.loginform{
+    float: right;
+    font-family: 'Lobster', cursive;
 }
-/*End Aside*/
+.logout{
+    float: right;
+    font-family: 'Lobster', cursive;
+}
+/*Login form*/
+/*End header*/
+
 /*Section*/
 section{
     float:left;
@@ -56,17 +60,17 @@ section{
     padding-left: 100px;
     padding-top: 70px;
 }
-/*End Section*/
-/*Article*/
-.content {
+section.content {
     text-align: center;
     float: right;
     width: 70%;
 }
-
-.content p{
-    font-size: 1em;
-    text-align: center;
+/*End Section*/
+/*Article*/
+article {
+    float:left;
+    width: 350px;
+    height: 450px;
 }
 .article {
     margin-left: 100px;
@@ -74,18 +78,13 @@ section{
     margin-bottom: 10px;
     margin-right: 20px;
 }
-
 .article-images img {
     height: 300px;
     width: 270px;
     /*padding-top: 50px;
     padding-left: 50px;*/
 }
-article {
-    float:left;
-    width: 350px;
-    height: 450px;
-}
+
 
 article table {
     width: 250px;
@@ -99,18 +98,34 @@ article img {
     /*padding-top: 50px;
     padding-left: 50px;*/
 }
+article.main-image{
+    width:550px;
+    height: 450px;
+    /*padding-left: 50px;*/
+    text-align: center;
+}
+/*Registration Form*/
+#registration-form{
+    font-size: 20px;
+    text-align: center;
+    border:1px solid #000000;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Lobster', cursive;
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(../img/border.jpg) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(../img/border.jpg) 30 round; /* Opera 11-12.1 */
+    border-image: url(../img/border.jpg) 30 round;
+}
+/*Registration Form*/
 /*End article*/
 
 .clear {
     clear: both;
 }
 
-.main-image{
-    width:550px;
-    height: 450px;
-    /*padding-left: 50px;*/
-    text-align: center;
-}
+
 .about-img{
  width:550px;
  height: 450px; 
@@ -165,10 +180,6 @@ nav li a:hover{
  width:100px;
 }
 
-.nav_bar li a:hover{
-    width:82px;
-}
-
 nav.hbar ul  {
     list-style-type: none;
     margin-top: 20px;
@@ -176,17 +187,10 @@ nav.hbar ul  {
     width: 1100px;
     padding: 0;
     overflow: hidden;
-    /*background-color: #00b359;*/
-     border: 10px solid transparent;
+    border: 10px solid transparent;
     -webkit-border-image: url(../img/border.jpg) 30 round; /* Safari 3.1-5 */
     -o-border-image: url(../img/border.jpg) 30 round; /* Opera 11-12.1 */
     border-image: url(../img/border.jpg) 30 round;
-}
-
-li.nav_bar {
-    float: left;
-    padding-right: 0px;
-    padding-left: 0px;
 }
 
 .hbar li {
@@ -227,11 +231,7 @@ li a:hover, .dropdown:hover .dropbtn {
     background: url(../img/border.jpg) 30 round;
 }
 
-.nav_bar li a:hover {
-    -webkit-border-image: url(../img/border.jpg) 30 round; /* Safari 3.1-5 */
-    -o-border-image: url(../img/border.jpg) 30 round; /* Opera 11-12.1 */
-    background: url(../img/border.jpg) 30 round;
-}
+
 
 li.dropdown {
     display: inline-block;
@@ -257,7 +257,7 @@ li.dropdown {
     -webkit-border-image: url(../img/border.jpg) 30 round; /* Safari 3.1-5 */
     -o-border-image: url(../img/border.jpg) 30 round; /* Opera 11-12.1 */
     border-image: url(../img/border.jpg) 30 round;
- }
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -288,8 +288,14 @@ li a:hover {
     /* background-color: #4AE371;*/
 }
 /*End search*/
-
+/*Aside*/
+aside {
+    float: left;
+    width: 200px;
+    padding-top: 5%;
+}
 /* Vertical Navigation Bar*/
+
 ul.nav_bar {
     list-style-type: none;
     margin: 0;
@@ -304,35 +310,106 @@ ul.nav_bar {
     /*border:1px solid #000000;*/
 }
 
-.nav_bar li {
+/*.nav_bar li {
     float: none;
-    /*border:1px solid #000000;*/
-}
+    /*border:1px solid #000000;
+    }*/
+    li.nav_bar {
+        float: left;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .nav_bar li a:hover {
+        -webkit-border-image: url(../img/border.jpg) 30 round; /* Safari 3.1-5 */
+        -o-border-image: url(../img/border.jpg) 30 round; /* Opera 11-12.1 */
+        background: url(../img/border.jpg) 30 round;
+        width:82px;
+    }
+    /*End Vertical Navigation Bar*/
+    /*End Aside*/
+    /*Horizontal navigation bar position*/
+    .products{
+        float: left;
+        width: 1000px;
+        padding-bottom: 100px;
+        padding-left: 100px;
+        padding-top: 50px;
+    }
 
-/*Horizontal navigation bar position*/
-.products{
-    float: left;
-    width: 1000px;
-    padding-bottom: 100px;
-    padding-left: 100px;
-    padding-top: 50px;
-}
+    .products img{
+        height: 200px;
+        width: 300px;
+    }
 
-.products img{
-    height: 200px;
-    width: 300px;
-}
+    div.position-img{
+        position: relative; left: 0; top: 0;
+        list-style: none;
+    }
 
-#footer{
-    bottom:0px;
-    width:100%;
-    height:60px;
-    clear: both;
-    padding-top: 10px;
-    border-top: 1px solid #000;
-    text-align: center;
-}
+    .picture {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+    } 
+    .contact{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 100px;
+        padding-left: 250px;
+        font-size: 20px;
+        text-align: center;
+        border: 10px solid transparent;
+        padding: 15px;
+        -webkit-border-image: url(../img/border.jpg) 30 round; /* Safari 3.1-5 */
+        -o-border-image: url(../img/border.jpg) 30 round; /* Opera 11-12.1 */
+        border-image: url(../img/border.jpg) 30 round;
+    }
 
+    article.contact{
+        text-align: center;
+        margin-left: 250px;
+        margin-bottom: 100px;
+        padding-bottom: 1px;
+        margin-top: 40px;
+    }
+
+    /* Hover effect*/
+    #wrapper {
+        width:995px;
+        padding:0px;
+        margin:0px auto;
+        font-family:helvetica;
+        text-align:center;
+        padding-bottom: 100px;
+        padding-top: 50px;
+        padding-right: 0px;
+        text-align: center;
+        width: 800px;
+        padding-left: 100px;
+    }
+
+    h1 {
+       text-align: center;
+       font-size:35px;
+       color:#A9BCF5;
+       padding-top: 10px;
+       /*padding-left: 600px; */
+       color: #000;
+       font-family: 'Lobster', cursive;
+   }
+
+   h1 p {
+    text-align:center;
+    margin:0px;
+    font-size:18px;
+    text-decoration:underline;
+    color:grey;
+}
+h2{
+    font-style: oblique;
+    font-family: 'Lobster', cursive;
+}
 h3 {
     margin: 0;
     text-align: center;
@@ -344,93 +421,8 @@ h4 {
     text-align: center;
     color: #000;
     font-family: 'Lobster', cursive;
-}
-
-div.position-img{
-    position: relative; left: 0; top: 0;
-    list-style: none;
-}
-
-.picture {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-}
-article.contact{
-    text-align: center;
-    margin-left: 250px;
-    margin-bottom: 100px;
-    padding-bottom: 1px;
-    margin-top: 40px;
-}
-.contact{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 100px;
-    padding-left: 250px;
-    font-size: 20px;
-    text-align: center;
-     border: 10px solid transparent;
-    padding: 15px;
-    -webkit-border-image: url(../img/border.jpg) 30 round; /* Safari 3.1-5 */
-    -o-border-image: url(../img/border.jpg) 30 round; /* Opera 11-12.1 */
-    border-image: url(../img/border.jpg) 30 round;
-}
-
-.loginform{
-    float: right;
-    font-family: 'Lobster', cursive;
-}
-.logout{
-    float: right;
-    font-family: 'Lobster', cursive;
-}
-
-#registration-form{
-    font-size: 20px;
-    text-align: center;
-    border:1px solid #000000;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-family: 'Lobster', cursive;
-    border: 10px solid transparent;
-    padding: 15px;
-    -webkit-border-image: url(../img/border.jpg) 30 round; /* Safari 3.1-5 */
-    -o-border-image: url(../img/border.jpg) 30 round; /* Opera 11-12.1 */
-    border-image: url(../img/border.jpg) 30 round;
-}
-/* Hover effect*/
-#wrapper {
-    width:995px;
-    padding:0px;
-    margin:0px auto;
-    font-family:helvetica;
-    text-align:center;
-    padding-bottom: 100px;
-    padding-top: 50px;
-    padding-right: 0px;
-    text-align: center;
-    width: 800px;
-    padding-left: 100px;
-}
-
-h1 {
-   text-align: center;
-    font-size:35px;
-    color:#A9BCF5;
-    padding-top: 10px;
-    /*padding-left: 600px; */
-    color: #000;
-    font-family: 'Lobster', cursive;
-}
-
-h1 p {
-    text-align:center;
-    margin:0px;
-    font-size:18px;
-    text-decoration:underline;
-    color:grey;
+    font-size:16px;
+    font-weight: bold;
 }
 
 .item {
@@ -462,7 +454,7 @@ h1 p {
     padding: 1px;
     border-image: url('./images/border.bmp') 35 stretch;
 }
-
+/*End hover effect*/
 /*Efect over Images*/
 .view-eighth figure .mask {
     top: -200px;
@@ -550,7 +542,8 @@ h1 p {
 /*End of Magnifier*/
 
 /*Multiple Columns*/
-#main_index_info{-webkit-column-count: 3; /* Chrome, Safari, Opera */
+#main_index_info{
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
     -moz-column-count: 3; /* Firefox */
     column-count: 3;
     -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
@@ -566,16 +559,39 @@ article#main_index_info h4 {
     -webkit-column-span: all; /* Chrome, Safari, Opera */
     column-span: all;
     font-family: 'Lobster', cursive;
+    margin-top: 10px;
 }
 
 article#main_index_info h3 {
     -webkit-column-span: all; /* Chrome, Safari, Opera */
     column-span: all;
     font-family: 'Lobster', cursive;
-    background-color: #00b359;
+    -webkit-border-image: url(../img/border.jpg) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(../img/border.jpg) 30 round; /* Opera 11-12.1 */
+    background: url(../img/border.jpg) 30 round;
 }
 /* End Multiple Columns*/
-
+/*End body*/
+/*Footer*/
+#footer{
+    bottom:0px;
+    width:100%;
+    height:60px;
+    clear: both;
+    padding-top: 10px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
+div.content p{
+    font-size: 1em;
+    text-align: center;
+}
+nav.content {
+    text-align: center;
+    float: right;
+    width: 10%;
+}
+/*End footer/
 /*Hack*/
 @-moz-document url-prefix() {
     body{
