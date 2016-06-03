@@ -61,6 +61,7 @@ section{
     padding-top: 70px;
 }
 section.content {
+    align-content: center;
     text-align: center;
     float: right;
     width: 70%;
@@ -75,7 +76,7 @@ article {
 .article {
     margin-left: 100px;
     margin-top: 20px;
-    margin-bottom: 10px;
+   margin-bottom: 10px;
     margin-right: 20px;
 }
 .article-images img {
@@ -94,7 +95,7 @@ article table {
 
 article img {
     height: 400px;
-    width: 600px;
+    width: 400px;
     /*padding-top: 50px;
     padding-left: 50px;*/
 }
@@ -102,7 +103,7 @@ article.main-image{
     width:550px;
     height: 450px;
     /*padding-left: 50px;*/
-    text-align: center;
+   align-content: center;
 }
 /*Registration Form*/
 #registration-form{
@@ -151,6 +152,13 @@ article.main-image{
 }
 
 /* Horizontal Navigation bar */
+
+#nav-trigger{
+    display: none;
+}
+.nav-trigger{
+    display: none;
+}
 nav.hbar{
     padding-top: 50px;
 }

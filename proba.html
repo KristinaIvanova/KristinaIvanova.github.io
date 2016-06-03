@@ -1,151 +1,78 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Infinity Online Store</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body>
-    <header>
-    <div class="header">
-      <img src="img/logo01.png" alt="logo" />
-    </div>
-    <br>
-    <!-- Login form-->
-    <div align="right">
-    <nav>
-    <div class="loginform">
-    <form name="login" action="index_submit" method="get">
-      <label for="usermail">Email</label>
-              <input type="email" name="usermail" placeholder="yourname@email.com" required>
-      <label for="password">Password</label>
-              <input type="password" name="password" placeholder="password" required>
-              <input type="submit" value="Login">
-    </form>
-    </div>
-        <a href="Register.html">Register</a> |
-        <a href="index.html">Logout</a> 
-    </nav>
-    <div align="center">
-        <h1 style="color:blue;">Infinity Online Store</h1>
-    </div>
-    </header>
-    <!-- Horizontal Navigation bar -->
-    <nav> 
-  <ul class="nav_hbar">
-    <li><strong><a href="index.html">Home</a></strong></li>
-    <li><strong><a href="products.html">Products</a></strong></li>
-    <li><strong><a href="contacts.html">Contact</a></strong></li>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="A collection of animating css-only hamburger menu toggle switches that transform when clicked represnting an active (or menu open) state.">
+  <title>CSS-Only Hamburger Menu Icons Demo</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
   
- <!--Search-->
-  
-
-    <li class="search"><input type=search results=5></li> 
-  </ul>
+<header class="o-header">
+  <nav class="o-header-nav">
+    <a href="http://callmenick.com/_development/icons-css3-transitions" class="o-header-nav__link"><i class="fa fa-arrow-left"></i> Previous Demo</a>
+    <a href="http://callmenick.com/post/animating-css-only-hamburger-menu-icons" class="o-header-nav__link">Back To Article <i class="fa fa-star"></i></a>
   </nav>
-  <div class="clear">
-  <br>
-  <!-- Vertical Navigation Bar -->
-      <aside>
-        <ul class="nav_bar">
-          <li><h3><a href="dress.html">Dress</a></h3></li>
-          <li><h3><a href="bags.html">Bags</a></h3></li>
-          <li><h3><a href="shoes.html">Shoes</a></h3></li>
-        </ul>    
-      </aside>
-    </div>
-    <section>
-      <br>
-      <!--End vertical navigation-->
-      
-      <div align="left">
-      <h1>Information</h1>
-      <ul>
-        <li>Price: 130$</li><br>
-        <li>Model: Dress 001</li><br>
-        <li>Cotton blend dress.
-        Round neck with fastening detail.
-        Stretch insert at the waist.
-        Classic fit.</li>
-      </ul>
-      </div>
-      <br><br><br>
-      <hr>
-      <img src ="img/img1.jpg" alt = "Dress1" style="width:400px; height:400px;">
-      <hr>
-      <table>
-        <table border="1">
-            <tr>
-              <th>OUR SIZE</th>
-              <th>UK</th>
-              <th>ES</th>
-            </tr>
-            <tr>
-              <td>36 (XS)</td>
-              <td>6</td>
-              <td>34</td>
-            </tr>
-            <tr>
-              <td>38 (S)</td>
-              <td>8</td>
-              <td>36</td>
-            </tr>
-            <tr>
-              <td>40 (M)</td>
-              <td>10</td>
-              <td>38</td>
-            </tr>
-            <tr>
-              <td>42 (L)</td>
-              <td>12</td>
-              <td>40</td>
-            </tr>
-        </table>
-        <br><br>
-        </table>
-          <form action="action_page">
-        <select name="size">
-          <option value="size">Size</option>
-          <option value="size">XS</option>
-          <option value="size">S</option>
-          <option value="size">M</option>
-          <option value="size">L</option>
-        </select>
-        <form action="action_page">
-        <select name="Qt">
-         <option value="size">Qt.</option>
-          <option value="size">1</option>
-          <option value="size">2</option>
-          <option value="size">3</option>
-          <option value="size">4</option>
-          <option value="size">5</option>
-        </select>
-        <br><br>
-         Name: <input type="text"><br><br>
-        Email: <input type="text"><br><br>
-        Adress:<input type="text"><br>
-        <br>
-        </form>
-        <input id="submit_button" type="submit" value="Send order" onclick="alert('Thank you!')"/>
-      </form>
-      </section>
+  <div class="o-container">
+    <h1 class="o-header__title">CSS-Only Hamburger Menu Icons Demo</h1>
+  </div>
+</header>
 
-    <footer id="footer">
-  
-      <div class="clear"></div>
-       <div class="content" align="center">
-      
-      
-        <p>Copyright ©
-         <span itemprop="copyrightYear">2016</span>
-         <span itemprop="copyrightHolder">Infinity Online Store</span>
-        </p>
-        <p><a href="index.html">Home</a> -
-           <a href="products.html">Products</a> -
-           <a href="contacts.html">Contact Us</a></p>
-
+<main class="o-content">
+  <div class="o-container">
     
-     </footer>
+    <div class="o-grid">
+      <div class="o-grid__item">
+        <button class="c-hamburger c-hamburger--rot">
+          <span>toggle menu</span>
+        </button>
+      </div>
+      <div class="o-grid__item">
+        <button class="c-hamburger c-hamburger--htx">
+          <span>toggle menu</span>
+        </button>
+      </div>
+      <div class="o-grid__item">
+        <button class="c-hamburger c-hamburger--htla">
+          <span>toggle menu</span>
+        </button>
+      </div>
+      <div class="o-grid__item">
+        <button class="c-hamburger c-hamburger--htra">
+          <span>toggle menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="github-icons"></div>
+  </div>
+</main>
+
+<footer class="o-footer">
+  <div class="o-container">
+    <small>&copy; 2015, callmenick.com</small>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    "use strict";
+    var toggles = document.querySelectorAll(".c-hamburger");
+    for (var i = toggles.length - 1; i >= 0; i--) {
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+    };
+    function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+        e.preventDefault();
+        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+    }
+  })();
+</script>
+
 
 </body>
 </html>
