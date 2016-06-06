@@ -8,8 +8,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     padding: 0;
@@ -28,7 +28,7 @@ body {
     width: 1100px;
     margin-left: auto;
     margin-right: auto;
-    background: url(./images/masterpage.jpg); 
+    background: url(./images/masterpage.jpg);
 }
 /*Header*/
 .header img {
@@ -56,15 +56,17 @@ body {
 /*Section*/
 section{
     float:left;
-    width: 750px;
-    padding-left: 100px;
-    padding-top: 70px;
+    width: 900px;
+    height: 650px;
+    /*padding-left: 100px;*/
+    /*padding-top: 70px;*/
 }
 section.content {
     align-content: center;
     text-align: center;
-    float: right;
+    float: left;
     width: 70%;
+    padding-bottom: 30%;
 }
 /*End Section*/
 /*Article*/
@@ -76,7 +78,7 @@ article {
 .article {
     margin-left: 100px;
     margin-top: 20px;
-   margin-bottom: 10px;
+    margin-bottom: 10px;
     margin-right: 20px;
 }
 .article-images img {
@@ -100,10 +102,15 @@ article img {
     padding-left: 50px;*/
 }
 article.main-image{
-    width:550px;
+    width:900px;
     height: 450px;
     /*padding-left: 50px;*/
-   align-content: center;
+    align-content: center;
+}
+article.main-image img {
+    height: 400px;
+    width: 600px;
+    padding-top: 1%;
 }
 /*Registration Form*/
 #registration-form{
@@ -118,6 +125,11 @@ article.main-image{
     -webkit-border-image: url(../img/border.jpg) 30 round; /* Safari 3.1-5 */
     -o-border-image: url(../img/border.jpg) 30 round; /* Opera 11-12.1 */
     border-image: url(../img/border.jpg) 30 round;
+    width: 40%;
+    align-content: center;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    margin-top: 3.5%;
 }
 /*Registration Form*/
 /*End article*/
@@ -128,15 +140,8 @@ article.main-image{
 
 
 .about-img{
- width:550px;
- height: 450px; 
-}
-
-#main_index_info{
-    width:500px;
-    height: 450px;
-    /*padding-left: 50px;*/
-    text-align: center;
+   width:550px;
+   height: 450px;
 }
 
 /*New Label*/
@@ -161,19 +166,20 @@ article.main-image{
 }
 nav.hbar{
     padding-top: 50px;
+    display:block;
 }
 a.nav_hbar {
-    list-style-type: none;
-    overflow: hidden;
-    z-index: 2;
-    padding-right: 20px;
-    padding-left: 20px;
-    text-align: center;
-    font-size: 1.3em;
-    font-family: 'Lobster', cursive;
-    font-weight: bold;
-    /*width: 100px;*/
-    height:100%;
+     list-style-type: none;
+     overflow: hidden;
+     z-index: 2;
+     padding-right: 20px;
+     padding-left: 20px;
+     text-align: center;
+     font-size: 1.3em;
+     font-family: 'Lobster', cursive;
+     font-weight: bold;
+     /*width: 100px;*/
+     height:100%;
     /*background-color:  #00b359;*/
 }
 
@@ -185,7 +191,7 @@ a.nav_hbar {
 }
 
 nav li a:hover{
- width:100px;
+   width:100px;
 }
 
 nav.hbar ul  {
@@ -239,8 +245,6 @@ li a:hover, .dropdown:hover .dropbtn {
     background: url(../img/border.jpg) 30 round;
 }
 
-
-
 li.dropdown {
     display: inline-block;
 }
@@ -286,9 +290,9 @@ nav li a: last-child {
     
 }
 li.search{
-   display: inline-block;
-   float: right;
-   margin: 15px;
+ display: inline-block;
+ float: right;
+ margin: 15px;
 }
 
 li a:hover {
@@ -359,7 +363,7 @@ ul.nav_bar {
         color: black;
         text-align: center;
         text-decoration: none;
-    } 
+    }
     .contact{
         padding-top: 50px;
         padding-bottom: 50px;
@@ -376,38 +380,68 @@ ul.nav_bar {
 
     article.contact{
         text-align: center;
-        margin-left: 250px;
+        margin-left: 150px;
         margin-bottom: 100px;
         padding-bottom: 1px;
         margin-top: 40px;
     }
+    /* Navigation Menu - Background */
+    .navigation {
+      /* critical sizing and position styles */
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+      /* non-critical appearance styles */
+      list-style: none;
+      background: #CCC;
+      display:none;
+  }
 
-    /* Hover effect*/
-    #wrapper {
-        width:995px;
-        padding:0px;
-        margin:0px auto;
-        font-family:helvetica;
-        text-align:center;
-        padding-bottom: 100px;
-        padding-top: 50px;
-        padding-right: 0px;
-        text-align: center;
-        width: 800px;
-        padding-left: 100px;
-    }
+  /* Navigation Menu - List items */
+  /* Hover effect*/
+  #wrapper {
+    width:995px;
+    padding:0px;
+    margin:0px auto;
+    font-family:helvetica;
+    text-align:center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-right: 0px;
+    text-align: center;
+    width: 800px;
+    padding-left: 100px;
+}
+#wrapper-products {
+    width:995px;
+    padding:0px;
+    margin:0px auto;
+    font-family:helvetica;
+    text-align:center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-right: 0px;
+    text-align: center;
+    width: 800px;
+    padding-left: 100px;
+}
 
-    h1 {
-       text-align: center;
-       font-size:35px;
-       color:#A9BCF5;
-       padding-top: 10px;
-       /*padding-left: 600px; */
-       color: #000;
-       font-family: 'Lobster', cursive;
-   }
+h1 {
+ text-align: center;
+ font-size:35px;
+ color:#A9BCF5;
+ padding-top: 10px;
+ /*padding-left: 600px; */
+ color: #000;
+ font-family: 'Lobster', cursive;
+}
 
-   h1 p {
+h1 p {
     text-align:center;
     margin:0px;
     font-size:18px;
@@ -433,7 +467,7 @@ h4 {
     font-weight: bold;
 }
 
-.item {
+article.item {
     overflow: hidden;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -442,7 +476,10 @@ h4 {
     width:250px;
     height:220px;
     margin-right: 10px;
-    border:1px solid #000000;
+    border: 3px solid transparent;
+        -webkit-border-image: url(../img/border.jpg) 30 round; /* Safari 3.1-5 */
+        -o-border-image: url(../img/border.jpg) 30 round; /* Opera 11-12.1 */
+        border-image: url(../img/border.jpg) 30 round;
 }
 
 .item img {
@@ -542,8 +579,8 @@ h4 {
 }
 
 /*To solve overlap bug at the edges during magnification*/
-.small { 
-    display: block; 
+.small {
+    display: block;
     width:  300px;
 }
 
@@ -561,6 +598,11 @@ h4 {
     -moz-column-rule: 2px solid #33CC66; /* Firefox */
     column-rule: 2px solid #33CC66;
     width: 600px;
+    width:500px;
+    height: auto;
+    /*padding-left: 50px;*/
+    text-align: center;
+    padding-left: 25%;
 }
 
 article#main_index_info h4 {
@@ -579,26 +621,118 @@ article#main_index_info h3 {
     background: url(../img/border.jpg) 30 round;
 }
 /* End Multiple Columns*/
-/*End body*/
-/*Footer*/
-#footer{
-    bottom:0px;
-    width:100%;
-    height:60px;
-    clear: both;
-    padding-top: 10px;
-    border-top: 1px solid #000;
-    text-align: center;
+/*flex box*/
+* {
+    margin: 0;
+    padding: 0;
 }
-div.content p{
-    font-size: 1em;
-    text-align: center;
-}
-nav.content {
-    text-align: center;
-    float: right;
-    width: 10%;
-}
+
+/*body {*/
+    /*padding: 10px;*/
+    /*}*/
+    section.box{
+        float:left;
+        /*width: 750px;*/
+        /*height: 450px;*/
+        align-content: center;
+        text-align: center;
+        padding-left: 30%;
+        padding-left: 10%;
+        width: 60%;
+        margin-bottom: 50%;
+    }
+    /*section.content {*/
+        /*align-content: center;*/
+        /*text-align: center;*/
+        /*float: right;*/
+        /*width: 70%;*/
+        /*}*/
+
+        #box-wrap {
+            display: flex;
+            width: 42vw;
+
+            height: auto;
+            box-sizing: border-box;
+            padding-top: 9%;
+            flex-wrap: wrap;
+
+
+            /* Added */
+        }
+        .box-item1 {
+            width: 48%;
+            /* Modified */
+            height: 15.5vw;
+            background: url(../img/main1.png);
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+        .box-item2 {
+            width: 48%;
+            /* Modified */
+            height: 15.5vw;
+            background: url(../img/main2.png);
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        /*.item1 {*/
+            /*margin-right: 10px;*/
+            /*}*/
+            /*.item2 {*/
+                /*margin-left: 10px;*/
+                /*}*/
+
+                .box-item3 {
+                    width: 55%;
+                    height: 30vw;
+                    background: url(../img/main3.png);
+                    background-size: 125%;
+                    margin-right: 10px;
+                }
+                .box-nested-items {
+                    display: flex;
+                    width: 42%;
+                    flex-wrap: wrap;
+                    align-content: space-between;
+                }
+                .box-item4 {
+                    width: 100%;
+                    height: 43%;
+                    background: url(../img/main4.png);
+                    background-size: 95%;
+                }
+                .box-item5 {
+                    width: 100%;
+                    height: 54%;
+                    background: url(../img/shoes4.jpg);
+                    background-size: 95%;
+                }
+                /*End Flex Box*/
+
+                /*End body*/
+                /*Footer*/
+                #footer{
+                    bottom:0px;
+                    width:100%;
+                    height:60px;
+                    clear: both;
+                    padding-top: 10px;
+                    border-top: 1px solid #000;
+                    text-align: center;
+                    margin-top: 10%;
+                }
+                div.content p{
+                    font-size: 1em;
+                    text-align: center;
+                    align-content: center;
+                }
+                nav.content {
+                    text-align: center;
+                    float: right;
+                    width: 10%;
+                }
 /*End footer/
 /*Hack*/
 @-moz-document url-prefix() {
@@ -607,3 +741,4 @@ nav.content {
     }
 }
 /*End Hack*/
+

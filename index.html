@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Infinity Online Store</title>
+    <title>Infinity Online Storetitle></title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+<head>
 <body>
 <ul class="navigation">
     <li class="nav-item"><a href="index.html">Home</a></li>
@@ -26,19 +26,16 @@
     <div>
         <header>
             <div class="header">
-            <h4></h4>
-                <img src="img/logo01.png" alt="logo">
-
+                 <a href="index.html"><img src="img/logo01.png" alt="logo"></a>
             </div>
-            <h1> Infinity Online Store</h1>
+            
             <br>
-            <!-- Login form-->
             <nav class= "nav-log">
                 <div class="loginform">
                     <form name="login" action="index_submit" method="get">
                         <label for="usermail">Email</label>
                         <input type="email" name="usermail" placeholder="yourname@email.com" required>
-                        <label for="password">Password</label>
+                        <label for="password">Password </label>
                         <input type="password" name="password" placeholder="password" required>
                         <input type="submit" value="Login">
                     </form>
@@ -51,12 +48,12 @@
             </nav>
         </header>
     </div>
-    <!-- Horizontal Navigation bar -->
-
-
+    <h1> Infinity Online Store</h1>
     <nav class = "hbar">
-        <ul class="navigation">
-            <li><div id="anchors"><a class="nav_hbar" href="#main_index_info"> About us </a></div></li>
+        <ul>
+            <li>
+                    <a class="nav_hbar" href="aboutus.html"> About us </a>
+            </li>
             <li class="dropdown">
                 <a href="products.html" class="nav_hbar" class="dropbtn"> Products </a>
                 <div class="dropdown-content">
@@ -64,66 +61,44 @@
                     <a href=#>Bags</a>
                     <a href=#>Shoes</a>
                 </div>
-            </li> 
-            <li><a class="nav_hbar" href="slices.html"> New </a></li>
-            <li><a class="nav_hbar" href="contacts.html"> Contact </a></li>
-            <!--Search-->
-            <li class="search"><input type=search results=5></li>
+            </li>
+            <li>
+                <a class="nav_hbar" href="slices.html"> New </a>
+            </li>
+            <li>
+                <a class="nav_hbar" href="contacts.html"> Contact </a>
+            </li>
+            
+            <li class="search">
+                <input type=search results=5>
+            </li>
         </ul>
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger"></label>
     </nav>
-
-
+    <div class="clear"></div>
+    <br>
     
-<div class="clear"></div>
-<br>
-    <!--Article -->
-    <h1> About us</h1>
-    <section class="content">
-        <article class="main-image">
-            <img src ="img/about-us-banner.png" alt = "shopping">
-        </article>
-        <article id="main_index_info" name="main_index_info">
-
-          <h3>Nulla sed tristique elit</h3>
-          <h4>Lorem ipsum </h4>
-          <p>
-            <h2>dolor sit amet, consectetur adipiscing elit. Nulla sed tristique elit, vitae accumsan dolor.
-            Ridens numquam eam ea, an nemore mollis sed, dicta aliquid mandamus eum te. Cu eos odio 
-            summo concludaturque, pro in electram temporibus disputationi. Per saepe labitur conceptam ut,
-            alia nusquam ne vis. Ne dolorem offendit maluisset vel, graeci iracundia ne eam.libero, 
-            egestas nec turpis egestas, dictum venenatis velit. Ridens numquam eam ea, an nemore mollis sed,
-             dicta aliquid mandamus eum te.</h2>
-          </p>
-<h4>Vestibulum nulla</h4>
-          <p> 
-           <h2>libero, egestas nec turpis egestas, dictum venenatis velit. Integer ex justo, dictum a tellus et, 
-           luctus euismod tellus.
-           Ridens numquam eam ea, an nemore mollis sed, dicta aliquid mandamus eum te. Cu eos odio summo
-           concludaturque, pro in electram temporibus disputationi. Per saepe labitur conceptam ut, 
-           alia nusquam ne vis. Ne dolorem offendit maluisset vel, graeci iracundia ne eam. Ridens numquam eam ea,
-            an nemore mollis sed, dicta aliquid mandamus eum te.</h2>
-         </p>
-
-         <p><h4>Maecenas nec</h4> 
-         <h2>tortor eu risus efficitur commodo. Nulla libero quam, pretium at quam vel,
-           hendrerit mattis lorem. Nullam hendrerit a justo ac ultrices.
-           Ridens numquam eam ea, an nemore mollis sed. Nulla libero quam, pretium at quam vel,
-           hendrerit mattis.</h2>
-         </p>
-       </article>
-    </section>
-    <!-- Vertical Navigation Bar -->
     <aside>
         <ul class="nav_bar">
             <li><h3><a href="dress.html">Dress</a></h3></li>
-            <li><h3><a href=#>Bags</a></h3></li>
+            <li><h3><a href=#>Bagsa</a></h3></li>
             <li><h3><a href=#>Shoes</a></h3></li>
         </ul>
     </aside>
-
-    <!--Footer-->
+    
+    <section class="box">
+        <div id="box-wrap">
+            <div class="box-item1"></div>
+            <div class="box-item2"></div>
+            <div class="box-item3"></div>
+            <div class="box-nested-items">
+                <div class="box-item4"></div>
+                <div class="box-item5"></div>
+            </div>
+        </div>
+   </section>
+    
     <footer id="footer">
         <div class="clear"></div>
         <div class="content">
@@ -133,31 +108,11 @@
             </p>
             <p><a href="index.html">Home</a> -
                 <a href="products.html">Products</a> -
-                <a href="contacts.html">Contact Us</a></p>
+                <a href="contacts.html">Contact Us</a>
+            </p>
         </div>
     </footer>
-
-
-
-
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
+

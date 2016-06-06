@@ -1,60 +1,86 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	<title>Infinity Online Store</title>
-		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		 <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-		 <link rel="stylesheet" href="css/responsive.css">
-	</head>
-	<body>
-	<div>
-		<header>
-			<div class="header">
-				<img src="img/logo01.png" alt="logo" />
-			</div>
-			<br>
-			<!-- Login form-->
-			<div>
-				<nav>
-					<div class="loginform">
-						<form name="login" action="index_submit" method="get">
-							<label for="usermail">Email</label>
-							<input type="email" name="usermail" placeholder="yourname@email.com" required>
-							<label for="password">Password</label>
-							<input type="password" name="password" placeholder="password" required>
-							<input type="submit" value="Login">
-						</div>
-					</form>
-				</nav>
-			</div>
-			<br><br>
-			<div class= "logout">
-				<a href="Register.html">Register</a> |
-				<a href="index.html">Logout</a>
-			</div>
-		</nav>
-	</header>
-
-<!-- Horizontal Navigation bar -->
-	<nav class = "hbar">
-    <ul>
-        <li><a class="nav_hbar" href="index.html"> Home </a></li>
-        <li class="dropdown">
-            <a href="products.html" class="nav_hbar" class="dropbtn"> Products </a>
-            <div class="dropdown-content">
-                <a href="dress.html">Dress</a>
-                <a href="bags.html">Bags</a>
-                <a href="shoes.html">Shoes</a>
+<head>
+    <title>Infinity Online Storetitle></title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<body>
+<ul class="navigation">
+    <li class="nav-item"><a href="index.html">Home</a></li>
+    <li class="nav-item"><a href="slices.html">New</a></li>
+    <li class="nav-item"><a href="dress.html">Dress</a></li>
+    <li class="nav-item"><a href="#">Bags</a></li>
+    <li class="nav-item"><a href="#">Shoes</a></li>
+    <li class="nav-item"><a href="contacts.html">Contact</a></li>
+    <li class="nav-item"><a href="aboutus.html">About</a></li>
+    <li class="nav-item"><a href="#">Login</a></li>
+    <li class="nav-item"><a href="index.html">Logout</a></li>
+</ul>
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger"></label>
+<div class="site-wrap">
+    <div>
+        <header>
+            <div class="header">
+               <a href="index.html"><img src="img/logo01.png" alt="logo"></a>
             </div>
-        </li>
-        <li><a class="nav_hbar" href="contacts.html"> Contact </a></li>
-                <!--Search-->
-        <li class="search"><input type=search results=5></li>
-    </ul>
-</nav>
-<div class="clear"></div>
-<br>
+            
+            <br>
+            
+            <nav class= "nav-log">
+                <div class="loginform">
+                    <form name="login" action="index_submit" method="get">
+                        <label for="usermail">Email</label>
+                        <input type="email" name="usermail" placeholder="yourname@email.com" required>
+                        <label for="password">Password </label>
+                        <input type="password" name="password" placeholder="password" required>
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
+                <br><br>
+                <div class= "logout">
+                    <a href="register.html">Register</a> |
+                    <a href="index.html">Logout</a>
+               </div>
+            </nav>
+        </header>
+    </div>
+    <h1> Infinity Online Store</h1>
+    <nav class = "hbar">
+        <ul>
+            <li>
+                <div id="anchors">
+                    <a class="nav_hbar" href="#main_index_info"> About us </a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="products.html" class="nav_hbar dropbtn"> Products </a>
+                <div class="dropdown-content">
+                    <a href="dress.html">Dress</a>
+                    <a href=#>Bags</a>
+                    <a href=#>Shoes</a>
+                </div>
+            </li>
+            <li>
+                <a class="nav_hbar" href="slices.html"> New </a>
+            </li>
+            <li>
+                <a class="nav_hbar" href="contacts.html"> Contact </a>
+            </li>
+            
+            <li class="search">
+                <input type=search results=5>
+            </li>
+        </ul>
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger"></label>
+    </nav>
+    <div class="clear"></div>
+    <br>
 <!-- Vertical Navigation Bar -->
 			<aside>
 				<ul class="nav_bar">
@@ -67,41 +93,43 @@
 
 			<br>
 			<article class = "contact">
-		<h1>Contact</h1>
-	<h4>
-	<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-		<div class="row">
-			<label for="name">Your name:</label><br />
-			<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-		</div>
-		<div class="row">
-			<label for="email">Your email:</label><br />
-			<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-		</div>
-		<div class="row">
-			<label for="message">Your message:</label><br />
-			<textarea id="message" class="input" name="message" rows="7" cols="40"></textarea><br />
-		</div>
-			<input type="file" accept="image/*" value="Choose file"/><br>
-		<!--<input  type="file" name="file" value= "Choose file"><br> -->
-		<br>
-		<input id="submit_button" type="submit" value="Send email" onclick="alert('Thank you!')"/>
-	</form>	
-	</h4>
-	</article>
-	<br>
-	<footer id="footer">
+				<h1>Contact</h1>
+				<h4>
+					<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+						<div class="row">
+							<label for="name">Your name:</label><br />
+							<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+						</div>
+						<div class="row">
+							<label for="email">Your email:</label><br />
+							<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+						</div>
+						<div class="row">
+							<label for="message">Your message:</label><br />
+							<textarea id="message" class="input" name="message" rows="7" cols="40"></textarea><br />
+						</div>
+						<input type="file" accept="image/*" value="Choose file"/><br>
+						<!--<input  type="file" name="file" value= "Choose file"><br> -->
+						<br>
+						<input id="submit_button" type="submit" value="Send email" onclick="alert('Thank you!')"/>
+					</form>	
+				</h4>
+			</article>
+			<br>
 			<div class="clear"></div>
-		 	 <div class="content" align="center">
-			  <p>Copyright ©
-			   <span itemprop="copyrightYear">2016</span>
-			   <span itemprop="copyrightHolder">Infinity Online Store</span>
-			  </p>
-			  <p><a href="index.html">Home</a> -
-			     <a href="products.html">Products</a> -
-			     <a href="contacts.html">Contact Us</a></p>
+	<footer id="footer">
 
-		
-		 </footer>
-</body>	
-</head>		
+		<div class="content">
+			<p>Copyright ©
+				<span itemprop="copyrightYear">2016</span>
+				<span itemprop="copyrightHolder">Infinity Online Store</span>
+			</p>
+			<p><a href="index.html">Home</a> -
+				<a href="products.html">Products</a> -
+				<a href="contacts.html">Contact Us</a></p>
+			</div>
+
+		</footer>
+	</head>	
+</body>
+</html>
