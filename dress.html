@@ -1,239 +1,257 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Infinity Online Store</title>
+    <title>Infinity Online Storetitle></title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
-<header>
-    <div class="header">
-       <a href="index.html"><img src="img/logo01.png" alt="logo"></a>
-    </div>
-    <br>
-    <!-- Login form-->
-    <div align="right">
-        <nav>
-            <div class="loginform cf">
-                <form name="login" action="index_submit" method="get">
-                    <label for="usermail">Email</label>
-                    <input type="email" name="usermail" placeholder="yourname@email.com" required>
-                    <label for="password">Password</label>
-                    <input type="password" name="password" placeholder="password" required>
-                    <input type="submit" value="Login">
-                </form>
-                <br>
-                <div class= "logout">
-                    <a href="Register.html">Register</a> |
-                    <a href="index.html">Logout</a>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <body>
+            <ul class="navigation">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="slices.html">New</a></li>
+                <li class="nav-item"><a href="dress.html">Dress</a></li>
+                <li class="nav-item"><a href="#">Bags</a></li>
+                <li class="nav-item"><a href="#">Shoes</a></li>
+                <li class="nav-item"><a href="contacts.html">Contact</a></li>
+                <li class="nav-item"><a href="aboutus.html">About</a></li>
+                <li class="nav-item"><a href="#">Login</a></li>
+                <li class="nav-item"><a href="index.html">Logout</a></li>
+            </ul>
+            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+            <label for="nav-trigger"></label>
+            <div class="site-wrap">
+                <div>
+                    <header>
+                        <div class="header">
+                           <a href="index.html"><img src="img/logo01.png" alt="logo"></a>
+                       </div>
+
+                       <br>
+                       <nav class= "nav-log">
+                            <div class="loginform">
+                                <form name="login" action="index_submit" method="get">
+                                    <label for="usermail">Email</label>
+                                    <input type="email" name="usermail" placeholder="yourname@email.com" required>
+                                    <label for="password">Password </label>
+                                    <input type="password" name="password" placeholder="password" required>
+                                    <input type="submit" value="Login">
+                                </form>
+                            </div>
+                            <br><br>
+                            <div class= "logout">
+                                <a href="register.html">Register</a> |
+                                <a href="index.html">Logout</a>
+                            </div>
+                        </nav>
+                     </header>
                 </div>
-            </div>
-        </nav>
-    </div>
-</header>
-<!-- Horizontal Navigation bar -->
-<nav class = "hbar">
-    <ul>
-        <li><div id="anchors"><a class="nav_hbar"  href="aboutus.html" href="#main_index_info"> About us </a></div></li>
-        <li class="dropdown">
-            <a href="products.html" class="nav_hbar" class="dropbtn"> Products </a>
-            <div class="dropdown-content">
-                <a href="dress.html">Dress</a>
-                <a href=#>Bags</a>
-                <a href=#>Shoes</a>
-            </div>
-        </li> 
-         <li><a class="nav_hbar" href="slices.html"> New </a></li>
-        <li><a class="nav_hbar" href="contacts.html"> Contact </a></li>
-                <!--Search-->
-        <li class="search"><input type=search results=5></li>
-    </ul>
-</nav>
-<div class="clear"></div>
-<br>
-<!-- Vertical Navigation Bar -->
- <aside>
-        <ul class="nav_bar">
-            <li><h3><a href="dress.html">Dress</a></h3></li>
-            <li><h3><a href=#>Bags</a></h3></li>
-            <li><h3><a href=#>Shoes</a></h3></li>
-        </ul>
-    </aside>
-	<h1>Dress</h1>
-<section>
-    <article class="article-images">
-        <ul>
-            <li class="view view-eighth">
-                <figure>
-                    <div class="position-img">
-                        <a class = "picture" href="dress1.html"><img src= "img/img1.jpg" alt = "Dress001" class="fishes"/>
-                            <img src="img/new_label.png" class="fish"/></a>
-                    </div>
-                    <figcaption class="mask">
-                        <table>
-                            <tr>
-                                <td>Price:</td>
-                                <td>130$</td>
-                            </tr>
-                            <tr>
-                                <td>Model:</td>
-                                <td>Dress 001</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">Cotton blend dress.
-                                    Round neck with fastening detail.
-                                    Stretch insert at the waist.
-                                    Classic fit.
-                                </td>
-                            </tr>
-                        </table>
-                    </figcaption>
-                </figure>
-            </li>
-        </ul>
-        <br>
-    </article>
-    <article class="article-images">
-        <ul>
-            <li class="view view-eighth">
-                <figure>
-                    <div class="position-img">
-                        <a class = "picture" href="dress2.html"><img src= "img/img2.jpg" alt = "Dress002" class="fishes"/>
-                         </a>
-                    </div>
-                    <figcaption class="mask">
-                        <table>
-                            <tr>
-                                <td>Price:</td>
-                                <td>120$</td>
-                            </tr>
-                            <tr>
-                                <td>Model:</td>
-                                <td>Dress 002</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">Cotton blend dress.
-                                    Round neck with fastening detail.
-                                    Stretch insert at the waist.
-                                    Classic fit.
-                                </td>
-                            </tr>
-                        </table>
-                    </figcaption>
-                </figure>
-            </li>
-        </ul>
-        <br>
-    </article>
-    <article class="article-images">
-        <ul>
-            <li class="view view-eighth">
-                <figure>
-                    <div class="position-img">
-                        <a class = "picture" href="dress1.html"><img src= "img/img3.jpg" alt = "Dress003" class="fishes"/>
-                        </a>
-                    </div>
-                    <figcaption class="mask">
-                        <table>
-                            <tr>
-                                <td>Price:</td>
-                                <td>110$</td>
-                            </tr>
-                            <tr>
-                                <td>Model:</td>
-                                <td>Dress 003</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">Cotton blend dress.
-                                    Round neck with fastening detail.
-                                    Stretch insert at the waist.
-                                    Classic fit.
-                                </td>
-                            </tr>
-                        </table>
-                    </figcaption>
-                </figure>
-            </li>
-        </ul>
-        <br>
-    </article>
-    <article class="article-images">
-        <ul>
-            <li class="view view-eighth">
-                <figure>
-                    <div class="position-img">
-                        <a class = "picture" href="dress4.html"><img src= "img/img4.jpg" alt = "Dress004" class="fishes"/>
-                            <img src="img/new_label.png" class="fish"/></a>
-                    </div>
-                    <figcaption class="mask">
-                        <table>
-                            <tr>
-                                <td>Price:</td>
-                                <td>130$</td>
-                            </tr>
-                            <tr>
-                                <td>Model:</td>
-                                <td>Dress 004</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">Cotton blend dress.
-                                    Round neck with fastening detail.
-                                    Stretch insert at the waist.
-                                    Classic fit.
-                                </td>
-                            </tr>
-                        </table>
-                    </figcaption>
-                </figure>
-            </li>
-        </ul>
-        <br>
-    </article>
-    <article class="article-images">
-        <ul>
-            <li class="view view-eighth">
-                <figure>
-                    <div class="position-img">
-                        <a class = "picture" href="dress1.html"><img src= "img/img5.jpg" alt = "Dress005" class="fishes"/>
-                            <img src="img/new_label.png" class="fish"/></a>
-                    </div>
-                    <figcaption class="mask">
-                        <table>
-                            <tr>
-                                <td>Price:</td>
-                                <td>110$</td>
-                            </tr>
-                            <tr>
-                                <td>Model:</td>
-                                <td>Dress 005</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">Cotton blend dress.
-                                    Round neck with fastening detail.
-                                    Stretch insert at the waist.
-                                    Classic fit.
-                                </td>
-                            </tr>
-                        </table>
-                    </figcaption>
-                </figure>
-            </li>
-        </ul>
-        <br>
-    </article>
-<footer id="footer">
-    <div class="clear"></div>
-    <div class="content">
-        <p>Copyright ©
-            <span itemprop="copyrightYear">2016</span>
-            <span itemprop="copyrightHolder">Infinity Online Store</span>
-        </p>
-        <p><a href="index.html">Home</a> -
-            <a href="products.html">Products</a> -
-            <a href="contacts.html">Contact Us</a></p>
-    </div>
-</footer>
-</body>
-</html>
+            <h1> Infinity Online Store</h1>
+            <nav class = "hbar">
+                <ul>
+                    <li>
+                        <a class="nav_hbar" href="aboutus.html"> About us </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="products.html" class="nav_hbar" class="dropbtn"> Products </a>
+                        <div class="dropdown-content">
+                            <a href="dress.html">Dress</a>
+                            <a href=#>Bags</a>
+                            <a href=#>Shoes</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav_hbar" href="slices.html"> New </a>
+                    </li>
+                    <li>
+                        <a class="nav_hbar" href="contacts.html"> Contact </a>
+                    </li>
+
+                    <li class="search">
+                        <input type=search results=5>
+                    </li>
+                </ul>
+                <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+                <label for="nav-trigger"></label>
+            </nav>
+            <div class="clear"></div>
+            <br>
+            <!-- Vertical Navigation Bar -->
+            <aside>
+                <ul class="nav_bar">
+                    <li><h3><a href="dress.html">Dress</a></h3></li>
+                    <li><h3><a href=#>Bags</a></h3></li>
+                    <li><h3><a href=#>Shoes</a></h3></li>
+                </ul>
+            </aside>
+            <h1>Dress</h1>
+            <section class= "section-dress">
+                    <ul>
+                        <li class="view view-eighth">
+                            <article class="article-images">
+                            <figure>
+                               <div class="position-img">
+                                        <a class = "picture" href="dress1.html"><img src= "img/img1.jpg" alt = "Dress001" class="fishes"/>
+                                            <img src="img/new_label.png" class="fish"/></a>
+                                        </div>
+                                    <figcaption class="mask">
+                                        <table>
+                                            <tr>
+                                                <td>Price:</td>
+                                                <td>130$</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Model:</td>
+                                                <td>Dress 001</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Cotton blend dress.
+                                                    Round neck with fastening detail.
+                                                    Stretch insert at the waist.
+                                                    Classic fit.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </figcaption>
+                                </figure>
+                          </article>
+                        </li>
+                            <li class="view view-eighth">
+                            <article class="article-images">
+                                <figure>
+                                    <div class="position-img">
+                                        <a class = "picture" href="dress2.html"><img src= "img/img2.jpg" alt = "Dress002" class="fishes"/>
+                                        </a>
+                                    </div>
+                                    <figcaption class="mask">
+                                        <table>
+                                            <tr>
+                                                <td>Price:</td>
+                                                <td>120$</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Model:</td>
+                                                <td>Dress 002</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Cotton blend dress.
+                                                    Round neck with fastening detail.
+                                                    Stretch insert at the waist.
+                                                    Classic fit.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </figcaption>
+                                </figure>
+                                </article>
+                            </li>
+                        <br>
+                            <li class="view view-eighth">
+                            <article class="article-images">
+                                <figure>
+                                    <div class="position-img">
+                                        <a class = "picture" href="dress3.html"><img src= "img/img3.jpg" alt = "Dress003" class="fishes"/>
+                                        </a>
+                                    </div>
+                                    <figcaption class="mask">
+                                        <table>
+                                            <tr>
+                                                <td>Price:</td>
+                                                <td>110$</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Model:</td>
+                                                <td>Dress 003</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Cotton blend dress.
+                                                    Round neck with fastening detail.
+                                                    Stretch insert at the waist.
+                                                    Classic fit.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                            </li>
+                        <br>
+                            <li class="view view-eighth">
+                            <article class="article-images">
+                                <figure>
+                                    <div class="position-img">
+                                        <a class = "picture" href="dress4.html"><img src= "img/img4.jpg" alt = "Dress004" class="fishes"/>
+                                            <img src="img/new_label.png" class="fish"/></a>
+                                        </div>
+                                        <figcaption class="mask">
+                                            <table>
+                                                <tr>
+                                                    <td>Price:</td>
+                                                    <td>130$</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Model:</td>
+                                                    <td>Dress 004</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">Cotton blend dress.
+                                                        Round neck with fastening detail.
+                                                        Stretch insert at the waist.
+                                                        Classic fit.
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </figcaption>
+                                    </figure>
+                                </article> 
+                                </li>
+                            <br>
+                                <li class="view view-eighth">
+                                <article class="article-images">
+                                    <figure>
+                                        <div class="position-img">
+                                            <a class = "picture" href="dress1.html"><img src= "img/img5.jpg" alt = "Dress005" class="fishes"/>
+                                                <img src="img/new_label.png" class="fish"/></a>
+                                            </div>
+                                            <figcaption class="mask">
+                                                <table>
+                                                    <tr>
+                                                        <td>Price:</td>
+                                                        <td>110$</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Model:</td>
+                                                        <td>Dress 005</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">Cotton blend dress.
+                                                            Round neck with fastening detail.
+                                                            Stretch insert at the waist.
+                                                            Classic fit.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </figcaption>
+                                        </figure>
+                               </article>    
+                            </li>
+                            </ul>
+                            </section>
+                                <br>
+                            <div class="clear"></div>
+                            <footer id="footer">
+                                <div class="content">
+                                    <p>Copyright ©
+                                        <span itemprop="copyrightYear">2016</span>
+                                        <span itemprop="copyrightHolder">Infinity Online Store</span>
+                                    </p>
+                                    <p><a href="index.html">Home</a> -
+                                        <a href="products.html">Products</a> -
+                                        <a href="contacts.html">Contact Us</a>
+                                    </p>
+                                </div>
+                            </footer>
+                        </body>
+                    </html>

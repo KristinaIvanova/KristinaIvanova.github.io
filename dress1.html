@@ -11,6 +11,20 @@
      <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+<ul class="navigation">
+    <li class="nav-item"><a href="index.html">Home</a></li>
+    <li class="nav-item"><a href="slices.html">New</a></li>
+    <li class="nav-item"><a href="dress.html">Dress</a></li>
+    <li class="nav-item"><a href="#">Bags</a></li>
+    <li class="nav-item"><a href="#">Shoes</a></li>
+    <li class="nav-item"><a href="contacts.html">Contact</a></li>
+    <li class="nav-item"><a href="aboutus.html">About</a></li>
+    <li class="nav-item"><a href="#">Login</a></li>
+    <li class="nav-item"><a href="index.html">Logout</a></li>
+</ul>
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger"></label>
+<div class="site-wrap">
 <header>
     <div class="header">
         <img src="img/logo01.png" alt="logo" />
@@ -34,7 +48,7 @@
                 </div>
             </nav>
         </header>
-    </div>
+         <h1> Infinity Online Store</h1>
 <!-- Horizontal Navigation bar-->
 <nav class = "hbar">
     <ul>
@@ -62,35 +76,32 @@
         <li><h3><a href="shoes.html">Shoes</a></h3></li>
     </ul>
 </aside>
-<section>
+<section class= "details-info">
 <h1>Information</h1>
     <br>
-        <ul>
+        <ul><h3>
             <li>Price: 130$</li><br>
             <li>Model: Dress 001</li><br>
             <li>Cotton blend dress.
                 Round neck with fastening detail.
                 Stretch insert at the waist.
                 Classic fit.</li>
+                </h3>
         </ul>
-    </div>
     <br><br><br>
-    <hr>
     <!-- Lets make a simple image magnifier -->
     <div class="magnify">
 	   <!-- This is the magnifying glass which will contain the original/large version -->
 	   <div class="large"></div>
 	   <!-- This is the small image -->
 	   <img class="small" src="img/img1.jpg"/>
-    </div>
+    </div> 
     <!--<img src ="img/img1.jpg" alt = "Dress1" style="width:400px; height:400px;">-->
-    <hr>
-    <table>
-        <table border="1">
+    <table class="details-table">
             <tr>
-                <th>OUR SIZE</th>
-                <th>UK</th>
-                <th>ES</th>
+                <td>OUR SIZE</td>
+                <td>UK</td>
+                <td>ES</td>
             </tr>
             <tr>
                 <td>36 (XS)</td>
@@ -112,9 +123,8 @@
                 <td>12</td>
                 <td>40</td>
             </tr>
-        </table>
-        <br><br>
     </table>
+        <br><br>
     <form action="action_page">
         <select name="size">
             <option value="size">Size</option>
@@ -137,12 +147,11 @@
             Email: <input type="text"><br><br>
             Address:<input type="text"><br>
             <br>
-        </form>
         <input id="submit_button" type="submit" value="Send order" onclick="alert('Thank you!')"/>
+    </form>
     </form>
 </section>
 <footer id="footer">
-    <div class="clear"></div>
     <div class="content">
         <p>Copyright ©
             <span itemprop="copyrightYear">2016</span>
