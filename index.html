@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <body>
+
+
 <ul class="navigation">
     <li class="nav-item"><a href="index.html">Home</a></li>
     <li class="nav-item"><a href="slices.html">New</a></li>
@@ -20,33 +22,37 @@
     <li class="nav-item"><a href="#">Login</a></li>
     <li class="nav-item"><a href="index.html">Logout</a></li>
 </ul>
+
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
 <label for="nav-trigger"></label>
+
+
 <div class="site-wrap">
-        <header>
-            <div class="header">
-                 <a href="index.html"><img src="img/logo01.png" alt="logo"></a>
+
+    <header>
+        <div class="header">
+             <a href="index.html"><img src="img/logo01.png" alt="logo"></a>
+        </div>
+        
+        <br>
+        <nav class= "nav-log">
+            <div class="loginform">
+                <form name="login" action="index_submit" method="get">
+                    <label for="usermail">Email</label>
+                    <input type="email" name="usermail" placeholder="yourname@email.com" required>
+                    <label for="password">Password </label>
+                    <input type="password" name="password" placeholder="password" required>
+                    <input type="submit" value="Login">
+                </form>
             </div>
-            
-            <br>
-            <nav class= "nav-log">
-                <div class="loginform">
-                    <form name="login" action="index_submit" method="get">
-                        <label for="usermail">Email</label>
-                        <input type="email" name="usermail" placeholder="yourname@email.com" required>
-                        <label for="password">Password </label>
-                        <input type="password" name="password" placeholder="password" required>
-                        <input type="submit" value="Login">
-                    </form>
-                </div>
-                <br><br>
-                <div class= "logout">
-                    <a href="register.html">Register</a> |
-                    <a href="index.html">Logout</a>
-                </div>
-            </nav>
-        </header>
-    </div>
+            <br><br>
+            <div class= "logout">
+                <a href="register.html">Register</a> |
+                <a href="index.html">Logout</a>
+            </div>
+        </nav>
+    </header>
+
     <h1> Infinity Online Store</h1>
     <nav class = "hbar">
         <ul>
@@ -88,30 +94,33 @@
     
     <section class="box">
         <div id="box-wrap">
-            <div class="box-item1"></div>
-            <div class="box-item2"></div>
-            <div class="box-item3"></div>
+            <div class="box-item1"><img src="img/main1.png"></div>
+            <div class="box-item2"><img src="img/main2.png"></div>
+            <div class="box-item3"><img src="img/main3.png"></div>
             <div class="box-nested-items">
-                <div class="box-item4"></div>
-                <div class="box-item5"></div>
+                <div class="box-item4"><img src="img/main4.png"></div>
+                <div class="box-item5"><img src="img/main5.png"></div>
             </div>
         </div>
    </section>
-    
+    <div class="clear"></div>
     <footer id="footer">
-        <div class="clear"></div>
+        
         <div class="content">
-            <p>Copyright ©
+           <h4><p>Copyright ©
                 <span itemprop="copyrightYear">2016</span>
                 <span itemprop="copyrightHolder">Infinity Online Store</span>
             </p>
             <p><a href="index.html">Home</a> -
                 <a href="products.html">Products</a> -
                 <a href="contacts.html">Contact Us</a>
-            </p>
+            </p></h4>
         </div>
     </footer>
 </div>
+
+
+
 </body>
 </html>
 
