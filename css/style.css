@@ -725,10 +725,10 @@ height: auto;
 box-sizing: border-box;
 padding-top: 9%;
 flex-wrap: wrap;
-
+}
 
 /* Added */
-}
+
 .box-item1 {
 width: 48%;
 /* Modified */
