@@ -595,7 +595,7 @@ article.main-image {
     /* padding-bottom: 20px; */
 }
 #wrapper-products {
-    padding-right: 66%;
+    padding-right: 20%;
    }
 div.position-img {
     position: relative;
@@ -609,6 +609,7 @@ section.box {
 	width: 100%;
 	padding: 10%;
 	box-sizing: border-box;
+	margin-bottom:44%;
 }
 
 

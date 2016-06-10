@@ -105,11 +105,11 @@ article {
 
 .article {
   margin-left: 100px;
-  margin-bottom: 10px;
   margin-top: 20px;
+  margin-bottom: 10px;
   margin-right: 20px; }
 
-.article.info-details {
+article.info-details {
   border: 5px solid transparent;
   padding: 15px;
   -webkit-border-image: url(../img/border.jpg) 30 round;
@@ -124,15 +124,15 @@ article {
   margin-left: 39%;
   margin-bottom: 30px; }
 
-.article.article-images {
+article.article-images {
   float: left;
   width: 350px;
   height: 450px;
   list-style: none; }
 
-.article.article-images img {
-  width: 300px;
-  height: 270px;
+.article-images img {
+  height: 300px;
+  width: 270px;
   /*padding-top: 50px;
   padding-left: 50px;*/
   list-style: none; }
@@ -143,23 +143,23 @@ article table {
   margin-top: 280px; }
 
 article img {
-  width: 300px;
-  height: 300px;
+  height: 400px;
+  width: 400px;
   /*padding-top: 50px;
   padding-left: 50px;*/ }
 
-.main-image {
+article.main-image {
   width: 900px;
   height: 450px;
   /*padding-left: 50px;*/
   align-content: center; }
 
-.main-image img {
-  width: 590px;
-  height: 395px;
+article.main-image img {
+  height: 400px;
+  width: 600px;
   padding-top: 1%; }
 
-.article-dress-info {
+article.article-dress-info {
   border: 10px solid transparent;
   padding: 15px;
   -webkit-border-image: url(../img/border.jpg) 30 round;
@@ -167,8 +167,8 @@ article img {
   -o-border-image: url(../img/border.jpg) 30 round;
   /* Opera 11-12.1 */
   border-image: url(../img/border.jpg) 30 round;
-  font-family: "Lobster", cursive;
   margin-left: 29%;
+  font-family: "Lobster", cursive;
   margin-bottom: 10%; }
 
 /*Registration Form*/
@@ -187,7 +187,7 @@ article img {
   border-image: url(../img/border.jpg) 30 round;
   width: 40%;
   align-content: center;
-  margin-left: 9%;
+  margin-left: 5%;
   margin-bottom: 10%;
   margin-top: 3.5%; }
 
@@ -296,9 +296,9 @@ nav.hbar li:hover {
   /* Opera 11-12.1 */
   background: url(../img/border.jpg) 30 round;
   width: 150px;
-  height: 50%;
   padding: 0px !important;
-  margin: 0px !important; }
+  margin: 0px !important;
+  height: 50%; }
 
 li.dropdown {
   display: inline-block; }
@@ -402,13 +402,13 @@ li.nav_bar {
 .products {
   float: left;
   width: 1000px;
-  padding-left: 100px;
   padding-bottom: 100px;
+  padding-left: 100px;
   padding-top: 50px; }
 
 .products img {
-  width: 200px;
-  height: 300px; }
+  height: 200px;
+  width: 300px; }
 
 div.position-img {
   position: relative;
@@ -424,9 +424,9 @@ div.position-img {
 
 .contact {
   padding-top: 50px;
+  padding-bottom: 50px;
   padding-right: 100px;
   padding-left: 250px;
-  padding-bottom: 50px;
   font-size: 20px;
   text-align: center;
   border: 10px solid transparent;
@@ -468,11 +468,11 @@ article.contact {
   margin: 0px auto;
   font-family: helvetica;
   text-align: center;
-  padding-left: 100px;
   padding-bottom: 100px;
   padding-top: 50px;
   padding-right: 0px;
-  width: 800px; }
+  width: 800px;
+  padding-left: 100px; }
 
 #wrapper-products {
   font-family: helvetica;
@@ -727,8 +727,8 @@ section.box {
 /* Added */
 .box-item1 {
   width: 48%;
-  height: 15.5vw;
   /* Modified */
+  height: 15.5vw;
   margin-bottom: 10px;
   margin-right: 10px; }
 
@@ -737,10 +737,10 @@ div.box-item1 img {
 
 .box-item2 {
   width: 48%;
-  height: 15.5vw;
   /* Modified */
-  margin-left: 10px;
-  margin-bottom: 10px; }
+  height: 15.5vw;
+  margin-bottom: 10px;
+  margin-left: 10px; }
 
 div.box-item2 img {
   width: 100%; }
@@ -1372,7 +1372,7 @@ nav.content {
     /* padding-bottom: 20px; */ }
 
   #wrapper-products {
-    margin-left: 15%; }
+    padding-right: 66%; }
 
   div.position-img {
     position: relative;
@@ -1384,8 +1384,7 @@ nav.content {
   section.box {
     width: 100%;
     padding: 10%;
-    box-sizing: border-box;
-    margin-bottom: 44%; }
+    box-sizing: border-box; }
 
   #box-wrap {
     width: 100%; }
@@ -1484,16 +1483,7 @@ nav.content {
     left: 0;
     z-index: 1;
     background: url(./images/masterpage.jpg);
-    background-size: 200%; }
-
-  article.contact {
-    text-align: center;
-    margin-left: 5%;
-    margin-bottom: 100px;
-    padding-bottom: 1px;
-    margin-top: 40px;
-    width: 320px;
-    padding-right: 5px; } }
+    background-size: 200%; } }
 /* END PHONES */
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=sass.css.map */

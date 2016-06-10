@@ -4,6 +4,19 @@ $font-family: 'Lobster', cursive;
 $border-image: url(../img/border.jpg) 30 round;
 $text-align: center;
 $align-content: center;
+
+@mixin size ($width, $height){
+    width:$width;
+     height:$height;
+}
+@mixin padding ($padding-left, $padding-bottom){
+    padding-left: $padding-left;
+    padding-bottom: $padding-bottom;
+}
+@mixin margin ($margin-left, $margin-bottom){
+    margin-left: $margin-left;
+    margin-bottom: $margin-bottom;
+}
 /*Body*/
 body {
     margin: auto;
@@ -16,8 +29,7 @@ body {
 .header {
     img {
         float: left;
-        width: 150px;
-        height: 100px;
+       @include size (150px,100px);
     }
     h1 {
         position: relative;
@@ -70,8 +82,7 @@ width: 900px;
   }
  &.new-products{
     float: left;
-    width: 70%;
-    height: auto;
+    @include size (70%, auto);
   }
 }
 
@@ -95,16 +106,14 @@ form.action_page{
 /*Article*/
 article {
     float:left;
-    width: 350px;
-    height: 450px;
+    @include size (350px,450px);
 }
 .article {
-    margin-left: 100px;
+    @include margin (100px, 10px);
     margin-top: 20px;
-    margin-bottom: 10px;
     margin-right: 20px;
 }
-article.info-details{
+.article.info-details{
     border: 5px solid transparent;
     padding: 15px;
     -webkit-border-image: $border-image; /* Safari 3.1-5 */
@@ -112,58 +121,49 @@ article.info-details{
     border-image: $border-image;
     font-family: $font-family;
     font-size: 20px;
-    padding-left: 11%;
-    padding-bottom: 40px;
-    margin-left: 39%;
-    margin-bottom: 30px;
+    @include padding (11%, 40px);
+    @include margin (39%, 30px);
 }
-article.article-images {
+.article.article-images {
     float:left;
-    width: 350px;
-    height: 450px;
+    @include size (350px,450px);
     list-style:none;
 }
-.article-images img {
-    height: 300px;
-    width: 270px;
+.article.article-images img {
+    @include size (300px,270px);
     /*padding-top: 50px;
     padding-left: 50px;*/
     list-style:none;
 }
-
 article table {
-    width: 250px;
-    height: 150px;
+    @include size (250px,150px);
     margin-top: 280px;
 }
-
 article img {
-    height: 400px;
-    width: 400px;
+    @include size (300px, 300px);
     /*padding-top: 50px;
     padding-left: 50px;*/
 }
-article.main-image{
-    width:900px;
-    height: 450px;
+.main-image{
+    @include size (900px,450px);
     /*padding-left: 50px;*/
     align-content: $align-content;
 }
-article.main-image img {
-    height: 400px;
-    width: 600px;
+.main-image img {
+    @include size (590px,395px);
     padding-top: 1%;
 }
-article.article-dress-info{
+
+.article-dress-info{
     border: 10px solid transparent;
     padding: 15px;
     -webkit-border-image:$border-image; /* Safari 3.1-5 */
     -o-border-image: $border-image; /* Opera 11-12.1 */
     border-image: $border-image;
-    margin-left: 29%;
     font-family: $font-family;
-    margin-bottom: 10%;
+    @include margin (29%, 10%);
 }
+
 /*Registration Form*/
 #registration-form{
     font-size: 20px;
@@ -178,8 +178,7 @@ article.article-dress-info{
     border-image: $border-image;
     width: 40%;
     align-content: $align-content;
-    margin-left: 5%;
-    margin-bottom: 10%;
+    @include margin (9%, 10%);
     margin-top: 3.5%;
 }
 /*Registration Form*/
@@ -191,8 +190,7 @@ article.article-dress-info{
 
 
 .about-img{
- width:550px;
- height: 450px;
+    @include size (550px,450px);
 }
 
 /*New Label*/
@@ -295,10 +293,9 @@ nav.hbar li:hover {
     -webkit-border-image: $border-image; /* Safari 3.1-5 */
     -o-border-image: $border-image; /* Opera 11-12.1 */
     background:$border-image;
-    width:150px;
+    @include size (150px,50%);
     padding: 0px !important;
     margin:0px !important;
-    height: 50%;
 }
 
 li.dropdown {
@@ -404,14 +401,12 @@ ul.nav_bar {
     .products{
         float: left;
         width: 1000px;
-        padding-bottom: 100px;
-        padding-left: 100px;
+        @include padding (100px, 100px);
         padding-top: 50px;
     }
 
     .products img{
-        height: 200px;
-        width: 300px;
+        @include size (200px,300px);
     }
 
     div.position-img{
@@ -427,9 +422,8 @@ ul.nav_bar {
     }
     .contact{
         padding-top: 50px;
-        padding-bottom: 50px;
         padding-right: 100px;
-        padding-left: 250px;
+        @include padding (250px, 50px);
         font-size: 20px;
         text-align: $text-align;
         border: 10px solid transparent;
@@ -441,16 +435,14 @@ ul.nav_bar {
 
     article.contact{
         text-align: $text-align;
-        margin-left: 150px;
-        margin-bottom: 100px;
+        @include margin (150px, 100px);
         padding-bottom: 1px;
         margin-top: 40px;
     }
     /* Navigation Menu - Background */
     .navigation {
       /* critical sizing and position styles */
-      width: 100%;
-      height: 100%;
+      @include size (100%,100%);
       position: fixed;
       top: 0;
       right: 0;
@@ -471,11 +463,10 @@ ul.nav_bar {
     margin:0px auto;
     font-family:helvetica;
     text-align:$text-align;
-    padding-bottom: 100px;
+    @include padding (100px, 100px);
     padding-top: 50px;
     padding-right: 0px;
     width: 800px;
-    padding-left: 100px;
 }
 #wrapper-products {
     font-family:helvetica;
@@ -527,8 +518,7 @@ article.item {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
-    width:250px;
-    height:220px;
+    @include size (250px,220px);
     margin-right: 10px;
     border: 3px solid transparent;
     -webkit-border-image: $border-image; /* Safari 3.1-5 */
@@ -542,8 +532,7 @@ article.item {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    width:250px;
-    height:220px;
+    @include size (250px,220px);
 }
 
 .item:hover img {
@@ -624,7 +613,7 @@ li.view.view-eighth{
 
 /*Lets create the magnifying glass*/
 .large {
-    width: 250px; height: 250px;
+    @include size (250px,250px);
     position: absolute;
     border-radius: 100%;
 
@@ -660,8 +649,7 @@ li.view.view-eighth{
     -webkit-column-rule: 2px solid #33CC66; /* Chrome, Safari, Opera */
     -moz-column-rule: 2px solid #33CC66; /* Firefox */
     column-rule: 2px solid #33CC66;
-    width: 600px;
-    height: auto;
+    @include size (600px,auto);
     /* padding-left: 50px; */
     text-align: $text-align;
     padding-left: 20%;
@@ -714,8 +702,7 @@ section.box{
 
 #box-wrap {
 display: flex;
-width: 42vw;
-height: auto;
+@include size (42vw,auto);
 box-sizing: border-box;
 padding-top: 9%;
 flex-wrap: wrap;
@@ -724,9 +711,8 @@ flex-wrap: wrap;
 /* Added */
 
 .box-item1 {
-width: 48%;
+@include size (48%,15.5vw);
 /* Modified */
-height: 15.5vw;
 margin-bottom: 10px;
 margin-right: 10px;
 }
@@ -734,11 +720,9 @@ div.box-item1  img {
     width: 100%;
 }
 .box-item2 {
-width: 48%;
+    @include size (48%, 15.5vw);
 /* Modified */
-height: 15.5vw;
-margin-bottom: 10px;
-margin-left: 10px;
+@include margin (10px, 10px);
 }
 div.box-item2  img {
     width: 100%;
@@ -751,14 +735,12 @@ div.box-item2  img {
 /*}*/
 
 .box-item3 {
-    width: 55%;
-    height: 30vw;
+    @include size (55%, 30vw);
     background-size: 125%;
     margin-right: 10px;
 }
 div.box-item3  img {
-    width: 100%;
-    height: 90%;
+    @include size (100%, 90%);
 }
 .box-nested-items {
     display: flex;
@@ -767,21 +749,18 @@ div.box-item3  img {
     align-content: space-between;
 }
 .box-item4 {
-    width: 100%;
-    height: 43%;
+    @include size (100%, 43%);
     background-size: 95%;
 }
 div.box-item4  img {
     width: 100%;
 }
 .box-item5 {
-    width: 100%;
-    height: 49%;
+    @include size (100%, 49%);
     background-size: 95%;
 }
 div.box-item5  img {
-    width: 100%;
-    height: 225px;
+    @include size (100%, 225px);
 }
 /*End Flex Box*/
 
@@ -789,8 +768,7 @@ div.box-item5  img {
 /*Footer*/
 #footer {
     bottom:0px;
-    width:100%;
-    height:60px;
+    @include size (100%, 60px);
     clear: both;
     padding-top: 10px;
     border-top: 1px solid #000;
@@ -816,4 +794,6 @@ nav.content {
 }
 /*End Hack*/
 
-@import"responsive";
+
+
+@import "responsive";
