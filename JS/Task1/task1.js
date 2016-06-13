@@ -1,0 +1,26 @@
+//1.1. JavaScript literals
+//Integer Example 1;
+var age= 5;
+var age2=10;
+var sum = age + age2;
+console.log(sum);
+//Integer Example 2;
+var a = 3;
+var x = (100 + 50) * a;
+console.log(x);
+//Integer Example 3;
+var x = 5;
+x++;
+var y = x;
+console.log(y);
+//Integer Example 4;
+var myName = '24';
+var myAge = 24;
+var sum = myName*myAge;
+console.log(sum);
+//Floating-point Example 1;
+var b = 0.8;
+var c = 0.6;
+var sum = b-c;
+console.log(sum);
+//Floating-point Example 2;
