@@ -98,15 +98,40 @@ circle (0,0);
 //Problem 7. Is prime
 function checkIfPrime (number) {
 var isPrime = true;
+}
 for(var i =2; i<=Math.sqrt(number); i++) {
 	if (number%i ==0) {
 		isPrime = false;
-		console.log(true);
-		return;
+		break;
 	} 
-};
-	console.log(false);
+	else {isPrime = true;}
+}
+	console.log(isPrime);
 }
 checkIfPrime(1);
 checkIfPrime(2);
 checkIfPrime(3);
+//----------------------------------------------------
+//Problem 8. Trapezoid area
+function trapezoid(a,b,h) {
+	var area= h*(a+b)/2;
+	console.log(area);
+}
+trapezoid(5,7,12);
+trapezoid(2,1,33);
+trapezoid(8.5,4.3,2.7);
+//-----------------------------------------------------
+//Problem 9. Point in Circle and outside Rectangle
+function point (x,y){
+	if (((x-1)*(x-1)+(y-1)*(y-1))<=9){
+		if ((y<-1 || y>1) || (x<-1 || x>5)) {
+			console.log("yes");
+			
+		} else {
+			console.log("no");
+		}
+	} 
+}
+point (1,4);
+point (3,2);
+point (0,1);
