@@ -44,7 +44,7 @@ console.log(reverse(256));
 console.log(reverse(123.45));
 //----------------------------------------------------------
 //Problem 3. Occurrences of word
-var text = 'I am hungry. I am doing to eat in Grosha with Nadia, Vesi, Dorotea and Didi. After that we are goin to eat ice-cream! ';
+var text = 'I am hungry. I am doing to eat in Grosha with Nadia, Vesi, Dorotea and Didi. After that we are going to eat ice-cream! ';
         console.log(text);
         function searchForWord(text, word, caseSensitive) {
             var caseSensitive = caseSensitive || false;
@@ -69,8 +69,63 @@ var text = 'I am hungry. I am doing to eat in Grosha with Nadia, Vesi, Dorotea a
 //-------------------------------------------------------------
 //Problem 4. Number of elements
 
-function numberOfElements() {
+/*function numberOfElements() {
 	var count = document.getElementsByTagName('div').length;
 	return count;
 }
-	console.log(numberOfElements());
+	console.log(numberOfElements());*/
+//-------------------------------------------------------------
+//Problem 5. Appearance count
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 7];
+var num = 7;
+function apperanceCount(number) {
+	var count = 0;
+	for (var i = 0; i < arr.length; i+=1) {
+	if (arr[i] === number) {
+		count++;
+	} 
+	}
+		return count;
+}
+console.log ('The number ('+num+') - '+apperanceCount(num)+' time(s)');
+//-----------------------------------------------------------------------
+//Problem 6. Larger than neighbours
+function largerThanNeighbours(position) {
+var arr = [5, 7, 8, 9, 3, 3, 4, 5, 6];
+for (var i = 0; i < arr.length; i+=1) {
+		if ( arr[position-1] >= 0 && arr[position+1] <= arr.length) {
+			if (arr[position] > arr[position-1] && arr[position] > arr[position+1]) {
+				console.log(arr[position]+' is larger than '+arr[position-1]+' and '+arr[position+1]);
+				break;
+			} else if (arr[position] > arr[position-1] && arr[position] < arr[position+1]) {
+				console.log(arr[position]+' is larger than '+arr[position-1]+' and smaller '+arr[position+1]);
+				break;
+			} else {
+				console.log(arr[position]+' is NOT larger than '+arr[position-1]+' and '+arr[position+1]);
+				break;
+			}
+		} else {
+			console.log('No two neighbours exist.');
+			break;
+		}
+	}
+}
+
+largerThanNeighbours(3);
+largerThanNeighbours(7);
+//-----------------------------------------------------------------------
+//Problem 7. First larger than neighbours
+function firstLarger() {
+    var arr = [5, 7, 8, 9, 3, 3, 4, 5, 6];
+    for (var i = 0, len = arr.length; i < len; i++) {
+        if (arr[i - 1] > 0 && arr[i + 1] <= arr.length) {
+            if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
+                console.log("The largest index is: " + i );
+                break;
+            }
+        } else if (arr[i] === (arr.length - 1)) {
+            console.log(-1);
+        }
+    }
+}
+firstLarger(); 
