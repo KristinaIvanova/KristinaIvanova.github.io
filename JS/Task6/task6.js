@@ -64,7 +64,7 @@ var text = 'There is nothing special about JavaScript arrays and the properties 
             return wordOccurences;
         }
         console.log('Search for word "with"');
-        console.log('Case insensitive: ' + searchForWord(text,"this") + ' occurences');
+        console.log('Case sensitive: ' + searchForWord(text,"this") + ' occurences');
         console.log('Case insensitive: ' + searchForWord(text, "this", true) + ' occurences');
 //-------------------------------------------------------------
 //Problem 4. Number of elements
