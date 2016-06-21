@@ -44,7 +44,7 @@ console.log(reverse(256));
 console.log(reverse(123.45));
 //----------------------------------------------------------
 //Problem 3. Occurrences of word
-var text = 'I am hungry. I am doing to eat in Grosha with Nadia, Vesi, Dorotea and Didi. After that we are going to eat ice-cream! ';
+var text = 'There is nothing special about JavaScript arrays and the properties that cause this. JavaScript properties that begin with a digit cannot be referenced With dot notation; ';
         console.log(text);
         function searchForWord(text, word, caseSensitive) {
             var caseSensitive = caseSensitive || false;
@@ -63,7 +63,7 @@ var text = 'I am hungry. I am doing to eat in Grosha with Nadia, Vesi, Dorotea a
             }
             return wordOccurences;
         }
-        console.log('Search for word "eat"');
+        console.log('Search for word "with"');
         console.log('Case insensitive: ' + searchForWord(text,"this") + ' occurences');
         console.log('Case insensitive: ' + searchForWord(text, "this", true) + ' occurences');
 //-------------------------------------------------------------
