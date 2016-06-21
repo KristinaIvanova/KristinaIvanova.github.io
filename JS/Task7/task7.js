@@ -57,8 +57,10 @@ removeElement(arr, 1);
 console.log(arr);
 //--------------------------------------------------------------------
 //Problem 3. Deep copy
-console.log(clone(24)); // Primitive data type
-console.log(clone({name: 'Krisi', age: 24})); // Reference data type
+console.log(clone(24)); // Primitive data type - number
+console.log(clone('Krisi')); // Primitive data type - string
+console.log(clone('Krisi' === '24')); // Primitive data type - boolean
+console.log(clone({name: 'Krisi', age: 24})); // Reference data type - object
 
 function clone(obj){
     if (typeof obj !== 'object') {
@@ -74,6 +76,9 @@ function clone(obj){
 }
 //----------------------------------------------------------------------
 //Problem 4. Has property
+function hasProperty(obj, prop){
+    return obj.hasOwnProperty(prop);
+}
 var person = {
     name: 'Krisi',
     age: 24,
@@ -87,17 +92,15 @@ person.gender = 'female';
 console.log(person);
 console.log('has gender: ' + hasProperty(person, 'gender'));
 
-function hasProperty(obj, prop){
-    return obj.hasOwnProperty(prop);
-}
+
 //----------------------------------------------------------------------
 //Problem 5. Youngest person
-function Person(name, lastName, age) {
-            this.name = name;
+function Person(firstName, lastName, age) {
+            this.firstName = firstName;
             this.lastName = lastName;
             this.age = age;
             this.toString = function () {
-                return this.name + " " + this.lastName + " age: " + this.age;
+                return this.firstName + " " + this.lastName + " age: " + this.age;
             }
         }
         var people = new Array();
@@ -126,6 +129,7 @@ function Person(name, lastName, age) {
 /*Problem 6.Write a function that groups an array of people by age, first or last name.
 The function must return an associative array, with keys - the groups, and values - arrays with people in this groups
 Use function overloading (i.e. just one function)*/
+//Using the same array by problem 5
 var group = function(arr, prop) {
 	var resultArr = new Object();
 	for (var person in arr) {
@@ -138,15 +142,12 @@ var group = function(arr, prop) {
 	return resultArr;
 };
 
-for (var i = people.length - 1; i >= 0; i--) {
-	console.log(people[i]);
-};
 var groupedByAge = group(people, 'age');
 console.log('Grouped by AGE:')
 console.log(groupedByAge);
-var groupedByFirstname = group(people, 'firstname');
+var groupedByFirstName = group(people, 'firstName');
 console.log('Grouped by first name:')
-console.log(groupedByFirstname);
-var groupedByLastName = group(people, 'lastname');
+console.log(groupedByFirstName);
+var groupedByLastName = group(people, 'lastName');
 console.log('Grouped by last name:')
 console.log(groupedByLastName);
