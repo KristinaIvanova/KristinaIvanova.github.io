@@ -1,3 +1,4 @@
+//Using Objects
 //Problem 1. Planar coordinates
 //Using formula: Math.sqrt((X2 + X1)^2 + (Y2+ Y1)^2)
 function point(x, y) {
