@@ -155,29 +155,7 @@ function func() {
 //---------------------------------------------
 //Problem 12. Generate list
 var people = [{name: 'Krisi', age: 17}, {name: 'Didi', age: 16}];
-/*var finalArr = generateList(temp, people);
-	    for (var i = 0; i < finalArr.length; i+=2) {
-	       console.log("<ul><li><strong>" + finalArr[i] + "</strong><span>" + finalArr[i + 1] );
-	    }
-	    function generateList(temp,people)
-	    {
-	        var holder = temp;
-	        var liArr = [];
-	        for (var person in people) {
-	            var index = temp.indexOf("{name}");
-	            var index2 = temp.indexOf("{age}");
-	            temp = temp.replace("{name}", people[person].name);
-	            liArr.push(temp.substr(index, people[person].name.length));
-	            temp = holder;
-	            temp = temp.replace("{age}", people[person].age);
-	            liArr.push(temp.substr(index2, people[person].age.toString().length));
-	            temp = holder;
-	        }
-	        return liArr;
-	    }
-		console.log(index);
-		console.log(index2);
-temp.outerHTML= generateList(people, temp.innerHTML)*/
+
  var tmpl = document.getElementById('list-item');
 		    var t = 0;
 		    var result = '<ul id="' + tmpl.id + '">';
