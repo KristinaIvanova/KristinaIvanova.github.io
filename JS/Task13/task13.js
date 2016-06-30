@@ -39,6 +39,17 @@ overview("#select", []);
 //Task 2
 
 function overviewJs(selector) {
+    try {
+        if (!(selector) || typeof selector !== 'string') {
+            console.log("Error");
+        }
+
+        if (!$selectedElement.length) {
+            console.log("Error");
+        }
+    } catch (err) {
+        console.log(err);
+    } 
 
     var $button = $(".button").text("Hide"),
         $content = $(".content");
