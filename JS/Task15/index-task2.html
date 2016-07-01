@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 15</title>
+   
+</head>
+<body>
+<div id="root"></div> 
+ <script type="text/x-handlebars-template" id="animals-template">
+  <ul class="animals-list">{{#each animals}}{{#if url}}
+                <li><a href="{{this.url}}">See a {{name}}</a></li>{{else}}
+                <li><a href="#">No link for {{name}} , here is Batman!</a></li>{{/if}} {{/each}}
+            </ul>   
+    </script> 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> 
+    <script src="handlebars-v4.0.5.js"></script>
+</script>
+    <script src="task15-task2.js"></script>
+</body>
+</html> 

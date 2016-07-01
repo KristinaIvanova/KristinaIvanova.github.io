@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 15</title>
+   
+</head>
+<body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> 
+    <script src="handlebars-v4.0.5.js"></script>
+
+    <div id="root"></div> 
+<script type="text/x-handlebars-template" id="vendors-template">
+        <table class="items-table">
+            <thead>
+                <th>#</th>
+                {{#data}}
+                    {{#headers}}
+                        <th>{{this}}</th>
+                    {{/headers}}
+                {{/data}}
+            </thead>
+            <tbody>
+                {{#data}}
+                    {{#items}}
+                    <tr>
+                        <td>{{@index}}</td>
+                        <td>{{col1}}</td>
+                        <td>{{col2}}</td>
+                        <td>{{col3}}</td>
+                    </tr>
+                    {{/items}}
+                {{/data}}
+            </tbody>
+        </table>
+    </script> 
+    </script>
+    <script src="task15-task1.js"></script>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

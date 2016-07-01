@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 15</title>
+   
+</head>
+<body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> 
+    <script src="handlebars-v4.0.5.js"></script>
+
+   <ul id="books-list" data-template="book-item-template"></ul>
+<script type="text/hanlebars-template" id="books-template" >
+    {{#each list}}
+    <li class="book-item">
+        <a href="/#books/{{id}}">
+            <strong>{{title}}</strong></a>
+        </a>
+    </li>
+    {{/each}}
+</script> 
+</script>
+    <script src="task15-task3.js"></script>
+</body>
+</html> 
