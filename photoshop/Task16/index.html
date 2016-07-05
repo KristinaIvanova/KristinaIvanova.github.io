@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<style>
+.btn1 {
+    padding: 0 20px;
+    width: 192px;
+    height: 47px;
+    font: 30px Cambria, serif;
+    border-radius: 20px;
+    background: url(button.png);
+    padding: 0;
+    border: 0;
+    -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow-blend-mode: multiply;
+    margin-right: 10px;
+}
+
+.btn2 {
+    padding: 0 20px;
+    width: 192px;
+    height: 47px;
+    font: 30px Cambria, serif;
+    border-radius: 20px;
+    background: url(button.png);
+    padding: 0;
+    border: 0;
+    -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow-blend-mode: multiply;
+    margin-right: 10px;
+}
+
+.btn3 {
+    padding: 0 20px;
+    min-width: 192px;
+    height: 47px;
+    font: 30px Cambria, serif;
+    border-radius: 20px;
+    background: url(button.png);
+    padding: 0;
+    border: 0;
+    -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow-blend-mode: multiply;
+    margin-right: 10px;
+}
+.preview {
+text-align: left;
+list-style-type: none;
+}
+.thumbs{
+text-align: right;
+list-style-type: none;
+}
+section.window{
+	width: 700px;
+	height: 400px;
+	padding: 50px;
+	margin: 50px;
+
+}
+article.preview{
+	position: relative;
+	float: left;
+}
+article.preview a img{
+ 	-webkit-box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75); 
+}
+article.smallPicture{
+	position: absolute;
+	width: 150px;
+	height: 100px;
+	float: left;
+	margin-left: 550px;
+}
+article.smallPicture a img{
+	margin-bottom: 50px;
+	display: block;
+	-webkit-box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75); 
+}
+.menu{
+    margin-top: 15px;
+}
+.elements {
+    float:left;	
+text-align: center; 
+line-height: 3.415;
+z-index: 4;
+text-transform: uppercase;
+list-style: none;
+width: 521px;
+height: 48px;
+background-image: url("menu.png");
+border: 1px solid #cfcfcf; 
+border-radius: 10px;
+margin:0;
+padding: 0;
+}
+.menu ul li {
+	float:left;
+	border-right: 1px solid #cfcfcf; 
+	height:48px;
+}
+.menu ul li a{
+text-decoration: none;
+text-align: center;
+font-size: 16px;
+font-family: "Arial";
+font-weight: bold;
+color: #a7162e;
+}
+.menu ul li:nth-child(1){
+	width: 85px;
+}
+.menu ul li:nth-child(2){
+	width: 97px;
+}
+.menu ul li:nth-child(3){
+	width: 206px;
+}
+.menu ul li:nth-child(4){
+	width: 128px;
+	border-right: none;
+}
+</style>
+
+<!--Button-->
+<button class="btn1"> OK </button>
+<button class="btn2"> Cancel </button>
+<a href= "#">
+<button class="btn3"> View more information </button>
+</a>
+<!--End Button-->
+
+<!--Menu-->
+<nav class = "menu">
+<ul class = "elements">
+<li><a href="#">home</a></li>
+<li><a href="#">about</a></li>
+<li><a href="#">more information</a></li>
+<li><a href="#">contacts</a></li>
+</ul>
+</nav>
+<!--End Menu-->
+
+<!--Gallery-->
+<section class = "window">
+<article class="preview">
+<a href="#"><img src="http://placehold.it/500x400" alt="Alt"/></a>
+</article>
+<article class ="smallPicture">
+<a href="#"><img src="http://placehold.it/150x100" alt="Alt"/></a>
+<a href="#"><img src="http://placehold.it/150x100" alt="Alt"/></a>
+<a href="#"><img src="http://placehold.it/150x100" alt="Alt"/></a>
+</article>
+</section>
+<!--End Gallery-->
