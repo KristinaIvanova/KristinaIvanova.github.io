@@ -1,164 +1,183 @@
 <!DOCTYPE html>
 <style>
-.btn1 {
-    padding: 0 20px;
-    width: 192px;
-    height: 47px;
-    font: 30px Cambria, serif;
-    border-radius: 20px;
-    background: url(button.png);
-    padding: 0;
-    border: 0;
-    -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-    box-shadow-blend-mode: multiply;
-    margin-right: 10px;
+
+.text1 {
+    position:relative;
+    bottom:9px;
+}
+.button {
+        min-width: 160px;
+        display: inline-flex;
+    } 
+.btn-left{
+    background: url(btn-left.png);
+            width: 23px;
+    height: 55px;
+        z-index: 2;
+        left: 0;
+        float: left;
+         background-repeat: no-repeat;
+}
+.btn-right {
+    background: url(btn-right.png);
+            width: 23px;
+    height: 55px;
+        z-index: 2;
+        right: 0;
+         background-repeat: no-repeat;
 }
 
-.btn2 {
-    padding: 0 20px;
-    width: 192px;
-    height: 47px;
-    font: 30px Cambria, serif;
-    border-radius: 20px;
-    background: url(button.png);
-    padding: 0;
-    border: 0;
-    -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-    box-shadow-blend-mode: multiply;
-    margin-right: 10px;
+.btn {
+        background: url(button.png);
+        background-repeat: no-repeat;
+        height: 55px;
+        min-width: 100px;
+        max-width: 100%;
+        border: 0;
+        font-size: 20px;
+        left: 25px;
+        padding: 0;
+        float: left;
+        outline: none;
+        text-decoration: none;
+        background-repeat: repeat-x;
+        line-height: 3em;
+        font: 30px Cambria, serif;
 }
 
-.btn3 {
-    padding: 0 20px;
-    min-width: 192px;
-    height: 47px;
-    font: 30px Cambria, serif;
-    border-radius: 20px;
-    background: url(button.png);
-    padding: 0;
-    border: 0;
-    -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-    box-shadow-blend-mode: multiply;
-    margin-right: 10px;
-}
 .preview {
-text-align: left;
-list-style-type: none;
+    text-align: left;
+    list-style-type: none;
 }
-.thumbs{
-text-align: right;
-list-style-type: none;
-}
-section.window{
-	width: 700px;
-	height: 400px;
-	padding: 50px;
-	margin: 50px;
 
+.thumbs {
+    text-align: right;
+    list-style-type: none;
 }
-article.preview{
-	position: relative;
-	float: left;
+
+section.window {
+    width: 700px;
+    height: 400px;
+    padding: 50px;
+    margin: 50px;
 }
-article.preview a img{
- 	-webkit-box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
+
+article.preview {
+    position: relative;
+    float: left;
+}
+
+article.preview a img {
+    -webkit-box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
-    box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75); 
+    box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
 }
-article.smallPicture{
-	position: absolute;
-	width: 150px;
-	height: 100px;
-	float: left;
-	margin-left: 550px;
+
+article.smallPicture {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin-left: 550px;
 }
-article.smallPicture a img{
-	margin-bottom: 50px;
-	display: block;
-	-webkit-box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
+
+article.smallPicture a img {
+    margin-bottom: 50px;
+    display: block;
+    -webkit-box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
-    box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75); 
+    box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.75);
 }
-.menu{
+
+.menu {
     margin-top: 15px;
+    margin-left: 20px;
 }
+
 .elements {
-    float:left;	
-text-align: center; 
-line-height: 3.415;
-z-index: 4;
-text-transform: uppercase;
-list-style: none;
-width: 521px;
-height: 48px;
-background-image: url("menu.png");
-border: 1px solid #cfcfcf; 
-border-radius: 10px;
-margin:0;
-padding: 0;
+    float: left;
+    text-align: center;
+    line-height: 3.415;
+    z-index: 4;
+    text-transform: uppercase;
+    list-style: none;
+    /*width: 521px;*/
+    height: 48px;
+    background-image: url("menu-1.png");
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
 }
+
 .menu ul li {
-	float:left;
-	border-right: 1px solid #cfcfcf; 
-	height:48px;
+    float: left;
+    border-right: 1px solid #cfcfcf;
+    border-left: 1px solid #fff;
+    height: 48px;
 }
-.menu ul li a{
-text-decoration: none;
-text-align: center;
-font-size: 16px;
-font-family: "Arial";
-font-weight: bold;
-color: #a7162e;
+
+.menu ul li a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Arial";
+    font-weight: bold;
+    padding: 0px 19px 0px 19px;
+    color: #a7162e;
 }
-.menu ul li:nth-child(1){
-	width: 85px;
+
+.menu ul li:nth-child(1) {
+    border-left: none;
 }
-.menu ul li:nth-child(2){
-	width: 97px;
-}
-.menu ul li:nth-child(3){
-	width: 206px;
-}
-.menu ul li:nth-child(4){
-	width: 128px;
-	border-right: none;
+
+/*.menu ul li:nth-child(2) {}
+
+.menu ul li:nth-child(3) {}
+*/
+.menu ul li:nth-child(4) {
+    border-right: none;
 }
 </style>
-
-<!--Button-->
-<button class="btn1"> OK </button>
-<button class="btn2"> Cancel </button>
-<a href= "#">
-<button class="btn3"> View more information </button>
-</a>
+<!--Button 1-->
+<div class = "button">
+<div class="btn-left"></div>
+<button class="btn"><span class = "text1"> Ok </span></button>
+<div class="btn-right"></div>
+</div>
+<!--Button 2-->
+<div class= "button">
+<div class="btn-left"></div>
+<button class="btn"><span class = "text1"> Cancel </span></button>
+<div class="btn-right"></div>
+</div>
+<!--Button 3-->
+<div class = "button">
+<div class="btn-left"></div>
+<a href="#" class="btn" >View more information</a>
+<div class="btn-right"></div>
+</div>
+</div>
 <!--End Button-->
-
 <!--Menu-->
-<nav class = "menu">
-<ul class = "elements">
-<li><a href="#">home</a></li>
-<li><a href="#">about</a></li>
-<li><a href="#">more information</a></li>
-<li><a href="#">contacts</a></li>
-</ul>
+<nav class="menu">
+    <ul class="elements">
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">more information</a></li>
+        <li><a href="#">contacts</a></li>
+    </ul>
 </nav>
 <!--End Menu-->
-
 <!--Gallery-->
-<section class = "window">
-<article class="preview">
-<a href="#"><img src="http://placehold.it/500x400" alt="Alt"/></a>
-</article>
-<article class ="smallPicture">
-<a href="#"><img src="http://placehold.it/150x100" alt="Alt"/></a>
-<a href="#"><img src="http://placehold.it/150x100" alt="Alt"/></a>
-<a href="#"><img src="http://placehold.it/150x100" alt="Alt"/></a>
-</article>
+<section class="window">
+    <article class="preview">
+        <a href="#"><img src="http://placehold.it/500x400" alt="Alt" /></a>
+    </article>
+    <article class="smallPicture">
+        <a href="#"><img src="http://placehold.it/150x100" alt="Alt" /></a>
+        <a href="#"><img src="http://placehold.it/150x100" alt="Alt" /></a>
+        <a href="#"><img src="http://placehold.it/150x100" alt="Alt" /></a>
+    </article>
 </section>
 <!--End Gallery-->
