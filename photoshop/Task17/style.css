@@ -51,9 +51,24 @@ body{
 
 /*nav*/
 #nav{
-	display:none;
+	float:left;
+	background-color: black;
+	opacity: 0.8;
+	width: 100%;
+	height: 5.3%;
+	position: absolute;
+	z-index: 20;
 }
-
+.logo {
+	text-align: center;
+}
+.main-menu{
+	text-align: center;
+}
+}
+.search-bag{
+	text-align: right;
+}
 /*end nav*/
 
 /*carousel*/
@@ -112,8 +127,9 @@ body{
 
     width: 32.2%;
     height: 55.2%;
-	
 	float: left;
+	font-size: 13px;
+  
 }
 
 .box-content img{
@@ -123,7 +139,7 @@ body{
 }
 
 #up-posts{
-	    height: 55.2%;
+	 height: 55.2%;
 }
 
 #up-posts div:nth-child(2){
@@ -139,27 +155,39 @@ body{
 	width: 18.7%;
     height: 27.2%;
     float:left;
+    margin-right: 1.3%;
 
 }
 .down-post img{
 	width: 100%;
-
 }
 
 /*end content*/
-/*
-body > div.content > div:nth-child(2)*/
 
 /*footer*/
 
 footer{
-	display: none ;
-    position: absolute;
+margin-top: 10%;
+margin-bottom: 10%;
     width: 59.1%;
     height: 17.9%;
     margin: 0px 20.45%;
-    background: grey;
+   
     bottom: 0;
 }
 
 /*end footer*/
+
+.text {
+  font-size: 13px;
+  font-family: "NeuzeitS";
+  color: rgb(150, 150, 150);
+  text-transform: uppercase;
+  line-height: 1.615;
+  text-align: justify;
+  left: 414.937px;
+  top: 965.121px;
+  width: 100%;
+  height: 24.3%;
+  z-index: 18;
+}
