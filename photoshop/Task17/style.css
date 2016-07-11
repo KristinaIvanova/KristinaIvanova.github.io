@@ -43,35 +43,108 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 } 
-/* end reset */
+/* End reset */
+@font-face {
+    font-family: NeuzeitS;
+    src: url(../Neuzeit_S_LT_Book.ttf);
+} 
 
 body{
 	width: 100%;
+	position:relative;
 }
 
-/*nav*/
+/*Nav*/
 #nav{
-	float:left;
-	background-color: black;
-	opacity: 0.8;
 	width: 100%;
-	height: 5.3%;
+	background:rgba(0, 0,0, 0.8);
+	align-items: center;
+	justify-content: center;
+	height: 3.6%;
 	position: absolute;
 	z-index: 20;
+	display:flex;
 }
-.logo {
-	text-align: center;
+#nav-menu,
+#nav-menu ul {
+	display:flex;
+	-webkit-padding-start: 0px;
 }
-.main-menu{
-	text-align: center;
+#nav-menu div.drop-down{
+	background: #00e1f5;
+	color:#323232;
+	height: 236px;
+	position: absolute;
+	top:37px;
+	right: 0;
+	left: 0;
+	display: none;
 }
+#nav-menu .menu-list{
+	display: block;
+	-webkit-column-count:3;
+	-moz-column-count:3;
+	column-count: 3;
 }
-.search-bag{
-	text-align: right;
+.line hr {
+	padding: 0;
+	margin: 1em 0;
+	display: block;
+	height: 1px;
+	border:0;
+	border-top: 1px solid #1cb1c5;
 }
-/*end nav*/
+.drop-down-wrapper{
+	margin:0 33.6%;
+}
+#journal div.drop-down{
+	height:103px;
+}
+#clothing> ul > li > ul > li > ul {
+	display: block;
+}
+#menu-left {
+	left: 12px;
+	position:absolute;
+	top: 12px;
+}
+#menu-right{
+	position: absolute;
+	right: 0;
+}
+#menu-center {
+	max-height: 9px;
+	text-align: left;
+	width: 717px;
+	letter-spacing: 2px;
+	line-height: 0.896;
+	font-size: 12px;
+	font-family: "NeuzeitS";
+	color: rgb(255, 255,255);
 
-/*carousel*/
+}
+#menu-center>ul>li{
+	margin: 0 2%;
+
+}
+#menu-center ul li:nth-child(1) {
+	margin: 0;
+}
+#menu-center > ul> li{
+	height: 24px;
+}
+#login {
+	width: 70%;
+	height: 70%;
+}
+
+.logo {
+
+	width: 65%;
+}
+/*End nav*/
+
+/*Carousel*/
 #carousel{
 	width: 100%;
 	position: relative;
@@ -125,60 +198,227 @@ body{
 
 .box-content{
 
-    width: 32.2%;
-    height: 55.2%;
+    width: 30%;
 	float: left;
-	font-size: 13px;
-  
+	/*font-size: 13px;*/
+  	margin-right: 20px;
 }
 
 .box-content img{
 
-    width: 100%;
-    height: 55.9%;
+    max-width: 100%;
+}
+.main-title{
+	font-size: 10px;
+}
+.smallArrow img{
+	width: auto;
+	height: auto;
 }
 
-#up-posts{
+#first-posts{
+	margin-bottom: 2.4%
+	margin-top: -.8%;
+	font-size: 13px;
+	font-family: "NeuzeitS";
+	color: rgb(150, 150, 150);
+	text-align: left;
+	letter-spacing: 2px;
 	 height: 55.2%;
+	}
+#first-posts p {
+	margin:0;
+}
+#first-posts article{
+	line-height: 1.2em;
 }
 
-#up-posts div:nth-child(2){
-	margin:0 1.7%;
+#first-posts div:nth-child(2){
+	/*margin:0 1.7%;*/
+}
+#first.posts.main-title{
+	text-transform: uppercase;
+}
+#first-posts.title2{
+	text-transform: uppercase;
+	color:black;
 }
 
-#down-posts{
+.down-post {
+     width: 18.7%;
+     height: 27.2%;
+     float: left;
+
+ }
+#second-posts{
 	display: inline;
 	min-width: 100%
+	margin-bottom:11.7%;
+}
+#socond-posts div.down-post{
+	margin-right: 1.625%;
+}
+#second-posts div.down-post:last-child {
+	margin:0;
 }
 
-.down-post{
-	width: 18.7%;
-    height: 27.2%;
-    float:left;
-    margin-right: 1.3%;
-
+.down-post-text{
+	font-size: 11px;
+	float: left;
+	margin:0;
+	font-family: "NeuzeitS";
+	color:rgb(50, 50, 50);
+	line-height: 1.286;
 }
 .down-post img{
 	width: 100%;
 }
 
-/*end content*/
-
-/*footer*/
-
-footer{
-margin-top: 10%;
-margin-bottom: 10%;
-    width: 59.1%;
-    height: 17.9%;
-    margin: 0px 20.45%;
-   
-    bottom: 0;
+.read-more{
+	color:#26e3f6;
 }
+.smallArrow img{
+	width: auto;
+	height: auto;
+}
+.menu-left{
+	float:right;
+	color:#969696;
 
-/*end footer*/
+}
+.backspace{
+	margin-left:-4px;
+}
+/*End content*/
 
-.text {
+/*Footer*/
+footer{ 
+	height: 17.9%;
+     margin: 0px 20.45%;
+	 border-top: 1px solid #c8c8c8;
+     text-align: -webkit-center;
+     position: absolute;
+     width: 59.1%;
+    
+     /*display: none;*/
+ 
+}
+#first{
+	padding-top: 30px;
+     padding-bottom: 30px;
+	height: 61.1%;
+}
+#footer-menu *{
+	display: inline;
+	font-size: .8em;
+}
+#footer-menu>li{
+margin-left: 2.6em;
+}
+#currency li{
+	margin-right: 2.6em;
+}
+#footer-menu,
+#currency {
+	-webkit-padding-start: 0px;
+}
+#social{display-inline-flex;
+margin-bottom: 2em;
+}
+#social-links{
+	display: flex;
+}
+.facebook{
+	background: url("images/footer/footer.png");
+	width: 11px;
+	height: 22px;
+}
+.facebook:hover {
+	background: url("images/footer/footerHover.png") no-repeat 0 0;
+		width: 11px;
+	height: 22px;
+}
+.tweeter {
+     background: url("images/footer/footer.png") no-repeat -45px -2px;
+     width: 23px;
+     height: 18px;
+ }
+
+ .tweeter:hover {
+     background: url("images/footer/footerHover.png") no-repeat -45px -2px;
+     width: 23px;
+     height: 18px;
+ }
+ 
+ .instagram {
+     background: url("images/footer/footer.png") no-repeat -100px -1px;
+     width: 20px;
+     height: 20px;
+ }
+  .instagram:hover {
+     background: url("images/footer/footerHover.png") no-repeat -100px -1px;
+     width: 20px;
+     height: 20px;
+ }
+  .pinterest{
+     background: url("images/footer/footer.png") no-repeat -149px 0;
+     width: 23px;
+     height: 22px;
+ }
+ 
+ 
+ .pinterest:hover {
+     background: url("images/footer/footerHover.png") no-repeat -149px 0;
+     width: 23px;
+     height: 22px;
+ }
+ 
+ .tweeter2 {
+     background: url("images/footer/footer.png") no-repeat -208px 0;
+     width: 12px;
+     height: 22px;
+ }
+  
+ .tweeter2:hover {
+     background: url("images/footer/footerHover.png") no-repeat -208px 0;
+     width: 12px;
+     height: 22px;
+ }
+
+ .sv {
+     background: url("images/footer/footer.png") no-repeat -253px -3px;
+     width: 29px;
+     height: 16px;
+ }
+  .sv:hover{
+ 	 background: url("images/footer/footerHover.png") no-repeat -253px -3px;
+     width: 29px;
+     height: 16px;
+ }
+ .b {
+     background: url("images/footer/footer.png") no-repeat -309px 0;
+     width: 18px;
+     height: 22px;
+ }
+  .b:hover {
+     background: url("images/footer/footerHover.png") no-repeat -309px 0;
+     width: 18px;
+     height: 22px;
+ }
+ #down {
+     border-top: 1px solid #c8c8c8;
+ }
+
+ #social-links div{
+ 	margin-left: 12px;
+ }
+
+#singup{
+background: url(images/footer/arrowFooter.png) no-repeat right center;
+}
+/*End footer*/
+
+/*.text {
   font-size: 13px;
   font-family: "NeuzeitS";
   color: rgb(150, 150, 150);
@@ -191,3 +431,4 @@ margin-bottom: 10%;
   height: 24.3%;
   z-index: 18;
 }
+*/
